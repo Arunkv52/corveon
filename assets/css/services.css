@@ -1,0 +1,48 @@
+/* services page styles */
+.nav-link:hover,.nav-link.active{color:#fff!important}
+.orb{position:absolute;border-radius:50%;filter:blur(90px);opacity:.4;pointer-events:none}
+.hero{position:relative;padding:11rem 0 5rem;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 30% 30%,#000 10%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 30% 30%,#000 10%,transparent 70%);opacity:.5}
+.hero h1{font-size:clamp(2.6rem,6.4vw,5.4rem);font-weight:800;line-height:1.04}
+.hero h1 .w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.08em}
+.hero h1 .w span{display:inline-block;transform:translateY(110%)}
+/* stacked service cards */
+.stack{position:sticky;top:110px;margin-bottom:2rem;transform-origin:50% 0}
+.scard{border-radius:28px;padding:2.6rem;border:1px solid var(--line);min-height:340px;position:relative;overflow:hidden}
+.scard h3{font-size:2rem;font-weight:800}
+.scard p{color:rgba(255,255,255,.78)}
+.scard ul{list-style:none;padding:0;margin:0}
+.scard li{padding:.55rem 0;border-bottom:1px solid rgba(255,255,255,.14);color:rgba(255,255,255,.9);display:flex;gap:.7rem}
+.scard li::before{content:"✓";color:var(--b);font-weight:700}
+.scard .ico{background:rgba(255,255,255,.14)}
+.more{display:inline-block;margin-top:1.4rem;color:#fff;font-weight:600;border-bottom:1px solid rgba(255,255,255,.5)}
+.more:hover{color:var(--b);border-color:var(--b)}
+.tags span{display:inline-block;border:1px solid rgba(255,255,255,.3);border-radius:50px;padding:.25rem .9rem;font-size:.8rem;margin:.3rem .4rem 0 0}
+.ico{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;font-size:1.5rem;margin-bottom:1.4rem}
+.s1{background:linear-gradient(140deg,#3b2ea8,#171a55)}
+.s2{background:linear-gradient(140deg,#0e7490,#12224d)}
+.s3{background:linear-gradient(140deg,#1d4ed8,#0e1030)}
+.s4{background:linear-gradient(140deg,#a3236a,#251349)}
+.s5{background:linear-gradient(140deg,#6d28d9,#1a1254)}
+.s6{background:linear-gradient(140deg,#0f766e,#0e1030)}
+/* engagement */
+.eng{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:2.2rem;height:100%;position:relative;overflow:hidden;transition:transform .4s,border-color .4s}
+.eng::after{content:"";position:absolute;inset:0;background:radial-gradient(400px circle at var(--x,50%) var(--y,0),rgba(108,92,255,.25),transparent 60%);opacity:0;transition:.4s}
+.eng:hover{transform:translateY(-8px);border-color:rgba(108,92,255,.6)}
+.eng:hover::after{opacity:1}
+.eng>*{position:relative;z-index:1}
+.eng.hot{border-color:rgba(108,92,255,.7);box-shadow:0 30px 70px -30px var(--a)}
+.eng .best{display:inline-block;background:linear-gradient(90deg,var(--a),var(--b));border-radius:50px;padding:.2rem .8rem;font-size:.75rem;font-weight:700;margin-bottom:1rem}
+.eng ul{padding-left:1.1rem;color:var(--mute);margin:1rem 0 0}
+.eng li{margin:.4rem 0}
+/* tech */
+.tech{display:flex;flex-wrap:wrap;gap:.8rem}
+.tech span{border:1px solid var(--line);background:rgba(255,255,255,.03);border-radius:14px;padding:.8rem 1.3rem;font-weight:600;transition:.3s}
+.tech span:hover{border-color:var(--b);color:var(--b);transform:translateY(-4px)}
+.tg{font-family:'Sora';font-weight:700;margin:2rem 0 1rem;color:var(--mute);font-size:1rem}
+/* faq */
+.accordion{--bs-accordion-bg:transparent;--bs-accordion-border-color:var(--line);--bs-accordion-color:var(--ink);--bs-accordion-btn-color:var(--ink);--bs-accordion-active-bg:transparent;--bs-accordion-active-color:var(--ink);--bs-accordion-btn-focus-box-shadow:none;--bs-accordion-btn-icon-transform:rotate(-180deg)}
+.cta p{color:rgba(255,255,255,.85);margin-inline:auto}
+footer a{color:var(--mute);line-height:2}
+footer a:hover{color:#fff}
+@media(max-width:991px){.navbar-collapse{background:var(--panel);padding:1rem;border-radius:16px;margin-top:.8rem}.pad{padding:5rem 0}.hero{padding:9rem 0 3rem}.stack{position:static}.scard{padding:1.8rem}}
