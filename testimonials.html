@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Client Testimonials | Corveon Software Development</title>
+    <meta
+      name="description"
+      content="Read what founders and product teams say about working with Corveon."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/base.css" rel="stylesheet" />
+    <link href="assets/css/testimonials.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="progress"></div>
+    <div class="glow-cursor"></div>
+
+     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+      <a class="brand" href="index.html"><i></i>Corveon</a>
+      <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nv" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nv">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/services/web-development.html">Service Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="careers.html">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="testimonials.html">Testimonials</a>
+          </li>
+        </ul>
+        <a href="start-project.html" class="btn btn-glow">Start a project</a>
+      </div>
+    </div>
+  </nav>
+
+    <!-- 1. HERO with rating summary -->
+    <header class="hero">
+      <div
+        class="orb"
+        style="
+          width: 440px;
+          height: 440px;
+          background: var(--a);
+          top: -120px;
+          right: -100px;
+        "
+        id="o1"
+      ></div>
+      <div
+        class="orb"
+        style="
+          width: 320px;
+          height: 320px;
+          background: var(--c);
+          bottom: -120px;
+          left: 10%;
+          opacity: 0.2;
+        "
+        id="o2"
+      ></div>
+      <div class="container position-relative">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <div class="crumb mb-4 fade-in">
+              <a href="index.html">Home</a> / Testimonials
+            </div>
+            <h1 id="headline" class="mb-4">
+              Don't take our word for it. Hear it from our clients.
+            </h1>
+            <p class="fs-5 mb-4 fade-in">
+              Founders and product teams share what it was like to build with
+              Corveon, and what changed for their business afterwards.
+            </p>
+            <a href="#wall" class="btn btn-glow fade-in">Read all reviews</a>
+          </div>
+          <div class="col-lg-5">
+            <!-- EDIT: rating and bars -->
+            <div class="panel" id="panel">
+              <div class="score">
+                <span class="grad" id="score" data-n="4.9">0</span
+                ><small>out of 5</small>
+              </div>
+              <div class="stars" aria-label="4.9 out of 5 stars">★★★★★</div>
+              <p class="mb-3" style="font-size: 0.92rem">
+                Average from 80+ client reviews
+              </p>
+              <div class="bars">
+                <div class="brow">
+                  <span>5★</span>
+                  <div><i style="--w: 92%"></i></div>
+                  <b>92%</b>
+                </div>
+                <div class="brow">
+                  <span>4★</span>
+                  <div><i style="--w: 7%"></i></div>
+                  <b>7%</b>
+                </div>
+                <div class="brow">
+                  <span>3★</span>
+                  <div><i style="--w: 1%"></i></div>
+                  <b>1%</b>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. FEATURED SLIDER -->
+    <section class="pad" style="padding-top: 4rem">
+      <div class="container">
+        <div class="sh reveal">
+          <span class="kick">Featured stories</span>
+          <h2 class="big">Results our clients talk about</h2>
+        </div>
+        <div
+          class="feat reveal"
+          id="feat"
+          aria-roledescription="carousel"
+          aria-label="Featured testimonials"
+        >
+          <div class="slides" aria-live="polite">
+            <!-- EDIT: one .slide per featured client -->
+            <figure class="slide on">
+              <blockquote>
+                Corveon shipped our MVP in ten weeks and never let quality slip.
+                They felt like part of our own team from day one.
+              </blockquote>
+              <figcaption>
+                <span class="av g1">RK</span>
+                <div><b>Rahul Kumar</b><small>Founder, PayLoop</small></div>
+                <span class="res">-60% reconciliation time</span>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <blockquote>
+                The booking app transformed how our clinics work. Patients love
+                it, and our reception staff finally have time for care.
+              </blockquote>
+              <figcaption>
+                <span class="av g2">MI</span>
+                <div><b>Meera Iyer</b><small>COO, CareSync</small></div>
+                <span class="res">4.8★ store rating</span>
+              </figcaption>
+            </figure>
+            <figure class="slide">
+              <blockquote>
+                Black Friday used to be our most stressful week. This year the
+                store didn't even blink, and sales were our best ever.
+              </blockquote>
+              <figcaption>
+                <span class="av g3">DB</span>
+                <div>
+                  <b>Daniel Brooks</b><small>Head of E-commerce, Shoply</small>
+                </div>
+                <span class="res">3x faster checkout</span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="ctrl">
+            <div
+              class="dots"
+              role="tablist"
+              aria-label="Choose testimonial"
+            ></div>
+            <div class="arrows">
+              <button id="prev" aria-label="Previous testimonial">←</button
+              ><button id="nxt" aria-label="Next testimonial">→</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. STATS -->
+    <section class="pb-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-6 col-lg-3 stat">
+            <h3 class="grad"><span class="cnt" data-n="98">0</span>%</h3>
+            <p class="mb-0">Clients who would recommend us</p>
+          </div>
+          <div class="col-6 col-lg-3 stat">
+            <h3 class="grad"><span class="cnt" data-n="92">0</span>%</h3>
+            <p class="mb-0">Projects delivered on time</p>
+          </div>
+          <div class="col-6 col-lg-3 stat">
+            <h3 class="grad"><span class="cnt" data-n="70">0</span>%</h3>
+            <p class="mb-0">Business from repeat and referrals</p>
+          </div>
+          <div class="col-6 col-lg-3 stat">
+            <h3 class="grad"><span class="cnt" data-n="120">0</span>+</h3>
+            <p class="mb-0">Products delivered</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TESTIMONIAL WALL with filters -->
+    <section class="pad" id="wall">
+      <div class="container">
+        <div class="sh reveal">
+          <span class="kick">All reviews</span>
+          <h2 class="big">What clients say</h2>
+        </div>
+        <div
+          class="filters"
+          id="filters"
+          role="group"
+          aria-label="Filter testimonials"
+        >
+          <button class="on" data-f="all">All</button
+          ><button data-f="startup">Startups</button
+          ><button data-f="enterprise">Enterprise</button
+          ><button data-f="fintech">Fintech</button
+          ><button data-f="health">Healthcare</button
+          ><button data-f="ai">AI</button>
+        </div>
+        <!-- EDIT: one .tcard per review. data-cat lists the filters it belongs to -->
+        <div class="wall" id="wall-grid">
+          <article class="card-x tcard" data-cat="startup fintech">
+            <div class="stars">★★★★★</div>
+            <p>
+              "They turned a rough idea into a working product faster than we
+              thought possible, and explained every decision in plain language."
+            </p>
+            <div class="who">
+              <span class="av g1">RK</span>
+              <div><b>Rahul Kumar</b><small>Founder, PayLoop</small></div>
+            </div>
+            <span class="svc-tag">Web development</span>
+          </article>
+          <article class="card-x tcard" data-cat="health enterprise">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Reliable, calm and very thorough. The app passed our security
+              review without a single major finding."
+            </p>
+            <div class="who">
+              <span class="av g2">MI</span>
+              <div><b>Meera Iyer</b><small>COO, CareSync</small></div>
+            </div>
+            <span class="svc-tag">Mobile apps</span>
+          </article>
+          <article class="card-x tcard" data-cat="enterprise">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Weekly demos meant no surprises. We always knew what was done,
+              what was next and what it would cost."
+            </p>
+            <div class="who">
+              <span class="av g3">DB</span>
+              <div>
+                <b>Daniel Brooks</b><small>Head of E-commerce, Shoply</small>
+              </div>
+            </div>
+            <span class="svc-tag">Cloud and DevOps</span>
+          </article>
+          <article class="card-x tcard" data-cat="ai startup">
+            <div class="stars">★★★★★</div>
+            <p>
+              "The assistant answers our team's questions with sources. Adoption
+              was instant because it is genuinely useful."
+            </p>
+            <div class="who">
+              <span class="av g4">SA</span>
+              <div><b>Sofia Alvarez</b><small>CEO, DocuMind</small></div>
+            </div>
+            <span class="svc-tag">AI integration</span>
+          </article>
+          <article class="card-x tcard" data-cat="enterprise">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Our drivers adopted the app in days. Deliveries are faster and
+              dispatchers finally have a live picture."
+            </p>
+            <div class="who">
+              <span class="av g2">TN</span>
+              <div>
+                <b>Tomasz Nowak</b><small>Operations Director, FleetGo</small>
+              </div>
+            </div>
+            <span class="svc-tag">Mobile apps</span>
+          </article>
+          <article class="card-x tcard" data-cat="startup">
+            <div class="stars">★★★★★</div>
+            <p>
+              "The redesign made our product feel simple. Students now come back
+              every day, and our team loves the design system."
+            </p>
+            <div class="who">
+              <span class="av g3">AK</span>
+              <div><b>Aisha Khan</b><small>Product Lead, LearnLoop</small></div>
+            </div>
+            <span class="svc-tag">UI/UX design</span>
+          </article>
+          <article class="card-x tcard" data-cat="fintech enterprise">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Market open used to be nerve-wracking. Since the rebuild, our
+              platform has stayed up when it matters most."
+            </p>
+            <div class="who">
+              <span class="av g1">KS</span>
+              <div><b>Kenji Sato</b><small>CTO, StockPulse</small></div>
+            </div>
+            <span class="svc-tag">Cloud and DevOps</span>
+          </article>
+          <article class="card-x tcard" data-cat="ai">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Support replies are five times faster and customers notice. The
+              team was careful about safety from the start."
+            </p>
+            <div class="who">
+              <span class="av g4">LM</span>
+              <div>
+                <b>Laura Mitchell</b><small>VP Customer Experience, Voxa</small>
+              </div>
+            </div>
+            <span class="svc-tag">AI integration</span>
+          </article>
+          <article class="card-x tcard" data-cat="startup health">
+            <div class="stars">★★★★★</div>
+            <p>
+              "Two engineers joined us in under two weeks and shipped in their
+              first sprint. It felt like hiring, without the wait."
+            </p>
+            <div class="who">
+              <span class="av g2">VS</span>
+              <div><b>Vikram Shah</b><small>Co-founder, MediTrack</small></div>
+            </div>
+            <span class="svc-tag">Dedicated teams</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. CLIENT STRIP -->
+    <div class="marq" aria-label="Some of our clients">
+      <div class="track" id="track">
+        <span>PayLoop</span><span>CareSync</span><span>Shoply</span
+        ><span>DocuMind</span><span>FleetGo</span><span>LearnLoop</span
+        ><span>StockPulse</span><span>Voxa</span> <span>PayLoop</span
+        ><span>CareSync</span><span>Shoply</span><span>DocuMind</span
+        ><span>FleetGo</span><span>LearnLoop</span><span>StockPulse</span
+        ><span>Voxa</span>
+      </div>
+    </div>
+
+    <section class="pad">
+      <div class="container">
+        <div class="cta" id="cta">
+          <h2 class="big mb-3">Be our next success story.</h2>
+          <p class="mb-4">
+            Tell us about your product and we will show you how we would
+            approach it.
+          </p>
+          <a href="start-project.html" class="btn-w me-2">Start a project</a>
+          <a
+            href="work.html"
+            class="btn-w"
+            style="
+              background: transparent;
+              color: #fff;
+              border: 1px solid rgba(255, 255, 255, 0.6);
+            "
+            >See our work</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <a class="brand" href="index.html"><i></i>Corveon</a>
+            <p class="mt-3">
+              Custom software development for startups and scale-ups.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white mb-3">Company</h6>
+            <a href="about.html">About</a><br /><a href="work.html">Work</a
+            ><br /><a href="testimonials.html">Testimonials</a><br /><a
+              href="careers.html"
+              >Careers</a
+            >
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white mb-3">Services</h6>
+            <a href="service.html?s=web-development">Web</a><br /><a
+              href="service.html?s=mobile-app-development"
+              >Mobile</a
+            ><br /><a href="service.html?s=cloud-devops">Cloud</a>
+          </div>
+          <div class="col-lg-3">
+            <h6 class="text-white mb-3">Contact</h6>
+            <a href="mailto:hello@Corveon.com">hello@Corveon.com</a><br /><a
+              href="#"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+        <p class="mt-5 mb-0 small">© 2026 Corveon. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="assets/js/testimonials.js"></script>
+  </body>
+</html>

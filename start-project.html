@@ -1,144 +1,288 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Start a Project | Corveon</title>
-<meta name="description" content="Tell Corveon about your product idea. Get a reply within one business day and a clear plan within a week.">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
-<link href="assets/css/base.css" rel="stylesheet">
-<link href="assets/css/start-project.css" rel="stylesheet">
-</head>
-<body>
-<div class="progress"></div><div class="glow-cursor"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Start a Project | Corveon</title>
+    <meta
+      name="description"
+      content="Tell Corveon about your product idea. Get a reply within one business day and a clear plan within a week."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/css/base.css" rel="stylesheet" />
+    <link href="assets/css/start-project.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="progress"></div>
+    <div class="glow-cursor"></div>
 
-<nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-  <div class="container">
-    <a class="brand" href="index.html"><i></i>Corveon</a>
-    <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nv" aria-label="Menu"><span class="navbar-toggler-icon"></span></button>
-    <div class="collapse navbar-collapse" id="nv">
-      <ul class="navbar-nav mx-auto">
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
-        <li class="nav-item"><a class="nav-link" href="process.html">Process</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
-      </ul>
-      <a href="start-project.html" class="btn btn-glow">Start a project</a>
-    </div>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="orb" style="width:440px;height:440px;background:var(--a);top:-120px;right:-100px" id="o1"></div>
-  <div class="orb" style="width:320px;height:320px;background:var(--c);bottom:-100px;left:8%;opacity:.2" id="o2"></div>
-  <div class="container position-relative">
-    <div class="row g-5">
-      <div class="col-lg-5">
-        <div class="crumb mb-4 fade-in"><a href="index.html">Home</a> / Start a project</div>
-        <h1 id="headline" class="mb-4">Tell us what you want to build.</h1>
-        <p class="fs-5 mb-4 fade-in">Answer a few quick questions and we will reply within one business day with next steps.</p>
-        <div class="fade-in mb-4">
-          <div class="nx"><div class="n">01</div><div><h5>We review your answers</h5><p>A senior team member reads every enquiry.</p></div></div>
-          <div class="nx"><div class="n">02</div><div><h5>Free discovery call</h5><p>30 minutes to talk goals, scope and budget.</p></div></div>
-          <div class="nx" style="border:0"><div class="n">03</div><div><h5>Plan and estimate</h5><p>A clear proposal within one week.</p></div></div>
-        </div>
-        <div class="ct fade-in">
-          <a href="mailto:hello@Corveon.com"><small>Prefer email?</small>hello@Corveon.com</a>
-          <a href="tel:+910000000000"><small>Call us, Mon to Fri, 9am to 6pm</small>+91 00000 00000</a>
-        </div>
+     <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+      <a class="brand" href="index.html"><i></i>Corveon</a>
+      <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nv" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nv">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/services/web-development.html">Service Details</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="careers.html">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="testimonials.html">Testimonials</a>
+          </li>
+        </ul>
+        <a href="start-project.html" class="btn btn-glow">Start a project</a>
       </div>
-      <div class="col-lg-7">
-        <div class="fcard" id="fcard">
-          <form id="pf" novalidate>
-            <div class="prog" aria-hidden="true"><i><b></b></i><i><b></b></i><i><b></b></i></div>
-            <div class="plab" id="plab" aria-live="polite">Step 1 of 3</div>
+    </div>
+  </nav>
 
-            <div class="step on" data-s="1">
-              <h3>What do you need?</h3><p class="mb-0">Pick everything that applies.</p>
-              <div class="chips mt-3">
-                <label class="chip"><input type="checkbox" name="service" value="Web development"><span>Web development</span></label>
-                <label class="chip"><input type="checkbox" name="service" value="Mobile app"><span>Mobile app</span></label>
-                <label class="chip"><input type="checkbox" name="service" value="Cloud and DevOps"><span>Cloud and DevOps</span></label>
-                <label class="chip"><input type="checkbox" name="service" value="UI/UX design"><span>UI/UX design</span></label>
-                <label class="chip"><input type="checkbox" name="service" value="AI integration"><span>AI integration</span></label>
-                <label class="chip"><input type="checkbox" name="service" value="Dedicated team"><span>Dedicated team</span></label>
-                <label class="chip"><input type="checkbox" name="service" value="Not sure yet"><span>Not sure yet</span></label>
+    <header class="hero">
+      <div
+        class="orb"
+        style="
+          width: 440px;
+          height: 440px;
+          background: var(--a);
+          top: -120px;
+          right: -100px;
+        "
+        id="o1"
+      ></div>
+      <div
+        class="orb"
+        style="
+          width: 320px;
+          height: 320px;
+          background: var(--c);
+          bottom: -100px;
+          left: 8%;
+          opacity: 0.2;
+        "
+        id="o2"
+      ></div>
+      <div class="container position-relative">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <div class="crumb mb-0 fade-in">
+              <a href="index.html">Home</a> / Start a project
+            </div>
+            
+            <p class="fs-5 mb-4 mt-4 fade-in">
+              Answer a few quick questions and we will reply within one business
+              day with next steps.
+            </p>
+            <div class="fade-in mb-4">
+              <div class="nx">
+                <div class="n">01</div>
+                <div>
+                  <h5>We review your answers</h5>
+                  <p>A senior team member reads every enquiry.</p>
+                </div>
               </div>
-              <div class="q">Where is your project today?</div>
-              <div class="chips">
-                <label class="chip"><input type="radio" name="stage" value="Just an idea"><span>Just an idea</span></label>
-                <label class="chip"><input type="radio" name="stage" value="Designs ready"><span>Designs ready</span></label>
-                <label class="chip"><input type="radio" name="stage" value="Existing product"><span>Existing product</span></label>
+              <div class="nx">
+                <div class="n">02</div>
+                <div>
+                  <h5>Free discovery call</h5>
+                  <p>30 minutes to talk goals, scope and budget.</p>
+                </div>
+              </div>
+              <div class="nx" style="border: 0">
+                <div class="n">03</div>
+                <div>
+                  <h5>Plan and estimate</h5>
+                  <p>A clear proposal within one week.</p>
+                </div>
               </div>
             </div>
+            <div class="ct fade-in">
+              <a href="mailto:hello@Corveon.com"
+                ><small>Prefer email?</small>hello@Corveon.com</a
+              >
+              <a href="tel:+910000000000"
+                ><small>Call us, Mon to Fri, 9am to 6pm</small>+91 00000
+                00000</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="fcard" id="fcard">
+              <form id="pf" novalidate>
+                
 
-            <div class="step" data-s="2">
-              <h3>Budget and timing</h3><p class="mb-0">A rough range is enough. You can change it later.</p>
-              <div class="q">Estimated budget</div>
-              <div class="chips">
-                <label class="chip"><input type="radio" name="budget" value="Under $10k"><span>Under $10k</span></label>
-                <label class="chip"><input type="radio" name="budget" value="$10k to $25k"><span>$10k to $25k</span></label>
-                <label class="chip"><input type="radio" name="budget" value="$25k to $50k"><span>$25k to $50k</span></label>
-                <label class="chip"><input type="radio" name="budget" value="$50k+"><span>$50k+</span></label>
-                <label class="chip"><input type="radio" name="budget" value="Not sure"><span>Not sure</span></label>
-              </div>
-              <div class="q">When do you want to start?</div>
-              <div class="chips">
-                <label class="chip"><input type="radio" name="timeline" value="As soon as possible"><span>As soon as possible</span></label>
-                <label class="chip"><input type="radio" name="timeline" value="In 1 to 3 months"><span>In 1 to 3 months</span></label>
-                <label class="chip"><input type="radio" name="timeline" value="In 3+ months"><span>In 3+ months</span></label>
-                <label class="chip"><input type="radio" name="timeline" value="Flexible"><span>Flexible</span></label>
+               
+
+                
+                <div>
+                  <h3>How can we reach you?</h3>
+                  <p class="mb-3">
+                    We only use these details to reply to your enquiry.
+                  </p>
+                  <div class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label" for="name">Full name</label
+                      ><input
+                        class="form-control"
+                        id="name"
+                        name="name"
+                        autocomplete="name"
+                        placeholder="Your name"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="email">Work email</label
+                      ><input
+                        class="form-control"
+                        id="email"
+                        name="email"
+                        type="email"
+                        autocomplete="email"
+                        placeholder="you@company.com"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="company"
+                        >Company
+                        <span style="color: var(--mute); font-weight: 400"
+                          >(optional)</span
+                        ></label
+                      ><input
+                        class="form-control"
+                        id="company"
+                        name="company"
+                        autocomplete="organization"
+                        placeholder="Company name"
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label class="form-label" for="phone"
+                        >Phone
+                        <span style="color: var(--mute); font-weight: 400"
+                          >(optional)</span
+                        ></label
+                      ><input
+                        class="form-control"
+                        id="phone"
+                        name="phone"
+                        type="tel"
+                        autocomplete="tel"
+                        placeholder="+91"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label class="form-label" for="msg"
+                        >About your project</label
+                      ><textarea
+                        class="form-control"
+                        id="msg"
+                        name="message"
+                        rows="4"
+                        placeholder="What are you building, and who is it for?"
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="ok"
+                          name="consent"
+                        /><label class="form-check-label" for="ok"
+                          >I agree to be contacted about my enquiry.</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="err" id="err" role="alert"></div>
+                <div class="nav-row">
+                  <button
+                    type="button"
+                    class="btn btn-ghost"
+                    id="back"
+                    style="visibility: hidden"
+                  >
+                    Back
+                  </button>
+                  <button type="button" class="btn btn-glow" id="next">
+                    Continue
+                  </button>
+                </div>
+              </form>
+
+              <div class="done" id="done" tabindex="-1">
+                <svg viewBox="0 0 100 100" aria-hidden="true">
+                  <circle cx="50" cy="50" r="44" />
+                  <path d="M30 52l13 13 27-30" />
+                </svg>
+                <h3 class="mt-4 mb-2" style="font-weight: 800">
+                  Thanks, we have your details.
+                </h3>
+                <p id="donetxt" class="mb-4">
+                  We will reply within one business day.
+                </p>
+                <a href="index.html" class="btn btn-ghost">Back to home</a>
               </div>
             </div>
-
-            <div class="step" data-s="3">
-              <h3>How can we reach you?</h3><p class="mb-3">We only use these details to reply to your enquiry.</p>
-              <div class="row g-3">
-                <div class="col-md-6"><label class="form-label" for="name">Full name</label><input class="form-control" id="name" name="name" autocomplete="name" placeholder="Your name"></div>
-                <div class="col-md-6"><label class="form-label" for="email">Work email</label><input class="form-control" id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com"></div>
-                <div class="col-md-6"><label class="form-label" for="company">Company <span style="color:var(--mute);font-weight:400">(optional)</span></label><input class="form-control" id="company" name="company" autocomplete="organization" placeholder="Company name"></div>
-                <div class="col-md-6"><label class="form-label" for="phone">Phone <span style="color:var(--mute);font-weight:400">(optional)</span></label><input class="form-control" id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+91"></div>
-                <div class="col-12"><label class="form-label" for="msg">About your project</label><textarea class="form-control" id="msg" name="message" rows="4" placeholder="What are you building, and who is it for?"></textarea></div>
-                <div class="col-12"><div class="form-check"><input class="form-check-input" type="checkbox" id="ok" name="consent"><label class="form-check-label" for="ok">I agree to be contacted about my enquiry.</label></div></div>
-              </div>
-            </div>
-
-            <div class="err" id="err" role="alert"></div>
-            <div class="nav-row">
-              <button type="button" class="btn btn-ghost" id="back" style="visibility:hidden">Back</button>
-              <button type="button" class="btn btn-glow" id="next">Continue</button>
-            </div>
-          </form>
-
-          <div class="done" id="done" tabindex="-1">
-            <svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="44"/><path d="M30 52l13 13 27-30"/></svg>
-            <h3 class="mt-4 mb-2" style="font-weight:800">Thanks, we have your details.</h3>
-            <p id="donetxt" class="mb-4">We will reply within one business day.</p>
-            <a href="index.html" class="btn btn-ghost">Back to home</a>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</header>
+    </header>
 
-<footer>
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-lg-5"><a class="brand" href="index.html"><i></i>Corveon</a><p class="mt-3">Custom software development for startups and scale-ups.</p></div>
-      <div class="col-6 col-lg-2"><h6 class="text-white mb-3">Company</h6><a href="about.html">About</a><br><a href="work.html">Work</a><br><a href="careers.html">Careers</a></div>
-      <div class="col-6 col-lg-2"><h6 class="text-white mb-3">Services</h6><a href="web-development.html">Web</a><br><a href="services.html">Mobile</a><br><a href="services.html">Cloud</a></div>
-      <div class="col-lg-3"><h6 class="text-white mb-3">Contact</h6><a href="mailto:hello@Corveon.com">hello@Corveon.com</a><br><a href="#">LinkedIn</a></div>
-    </div>
-    <p class="mt-5 mb-0 small">© 2026 Corveon. All rights reserved.</p>
-  </div>
-</footer>
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <a class="brand" href="index.html"><i></i>Corveon</a>
+            <p class="mt-3">
+              Custom software development for startups and scale-ups.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white mb-3">Company</h6>
+            <a href="about.html">About</a><br /><a href="work.html">Work</a
+            ><br /><a href="careers.html">Careers</a>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white mb-3">Services</h6>
+            <a href="web-development.html">Web</a><br /><a href="services.html"
+              >Mobile</a
+            ><br /><a href="services.html">Cloud</a>
+          </div>
+          <div class="col-lg-3">
+            <h6 class="text-white mb-3">Contact</h6>
+            <a href="mailto:hello@Corveon.com">hello@Corveon.com</a><br /><a
+              href="#"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+        <p class="mt-5 mb-0 small">© 2026 Corveon. All rights reserved.</p>
+      </div>
+    </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="assets/js/start-project.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="assets/js/start-project.js"></script>
+  </body>
 </html>

@@ -1,0 +1,428 @@
+/* service template styles (loads after base.css) */
+.nav-link:hover,
+.nav-link.active {
+  color: #fff !important;
+}
+.btn-ghost {
+  border: 1px solid var(--line);
+  color: var(--ink);
+  border-radius: 50px;
+  padding: 0.8rem 1.8rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-ghost:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.4;
+  pointer-events: none;
+}
+.cta p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-inline: auto;
+}
+footer a {
+  color: var(--mute);
+  line-height: 2;
+}
+footer a:hover {
+  color: #fff;
+}
+
+/* section heading block */
+.sh {
+  margin-bottom: 3rem;
+}
+.sh .kick {
+  display: inline-block;
+  color: var(--b);
+  font-family: "Sora";
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+/* 1. hero */
+.hero {
+  position: relative;
+  padding: 10rem 0 5rem;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse at 40% 30%, #000 10%, transparent 70%);
+  -webkit-mask-image: radial-gradient(
+    ellipse at 40% 30%,
+    #000 10%,
+    transparent 70%
+  );
+  opacity: 0.5;
+}
+.hero h1 {
+  font-size: clamp(2.4rem, 5.4vw, 4.6rem);
+  font-weight: 800;
+  line-height: 1.05;
+}
+.hero h1 .w {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: 0.08em;
+}
+.hero h1 .w span {
+  display: inline-block;
+  transform: translateY(110%);
+}
+.panel {
+  background: rgba(14, 16, 48, 0.8);
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 40px 80px -30px #000;
+}
+.panel .big-ico {
+  width: 76px;
+  height: 76px;
+  border-radius: 22px;
+  display: grid;
+  place-items: center;
+  font-size: 2.2rem;
+  background: linear-gradient(135deg, var(--a), var(--b));
+  margin-bottom: 1.2rem;
+  box-shadow: 0 20px 40px -15px var(--a);
+}
+.panel h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+}
+.fact {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--line);
+}
+.fact b {
+  font-family: "Sora";
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+.fact span {
+  color: var(--mute);
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+/* cards */
+.card-x {
+  background: linear-gradient(60deg, #1e3a5f, #c8a96a);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 2rem;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.4s,
+    border-color 0.4s;
+}
+.card-x::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    400px circle at var(--x, 50%) var(--y, 0),
+    rgba(108, 92, 255, 0.25),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: 0.4s;
+}
+.card-x:hover {
+  transform: translateY(-8px);
+  border-color: rgba(108, 92, 255, 0.6);
+}
+.card-x:hover::after {
+  opacity: 1;
+}
+.card-x > * {
+  position: relative;
+  z-index: 1;
+}
+.ico {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(108, 92, 255, 0.3),
+    rgba(34, 211, 238, 0.2)
+  );
+  margin-bottom: 1.4rem;
+}
+.card-x h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* 2. overview */
+.pt {
+  display: flex;
+  gap: 1rem;
+  padding: 1.2rem 0;
+  border-top: 1px solid var(--line);
+}
+.pt i {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--a), var(--b));
+  margin-top: 0.55rem;
+}
+.pt h5 {
+  font-family: "Sora";
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin: 0 0 0.2rem;
+}
+.pt p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* 3. capabilities bullets */
+.bl {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0 0;
+}
+.bl li {
+  padding: 0.65rem 0;
+  border-top: 1px solid var(--line);
+  display: flex;
+  gap: 0.7rem;
+  color: #c9cbe8;
+  font-size: 0.97rem;
+}
+.bl li::before {
+  content: "✓";
+  color: var(--b);
+  font-weight: 700;
+}
+
+/* 4. use cases */
+.sub {
+  font-family: "Sora";
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 0 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.sub::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+.ind {
+  text-align: left;
+}
+.ind .em {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 0.8rem;
+}
+.ind h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+.ind p {
+  margin: 0;
+  font-size: 0.92rem;
+}
+.sc .row-l {
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.93rem;
+}
+.sc .row-l b {
+  display: block;
+  font-family: "Sora";
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--b);
+  margin-bottom: 0.2rem;
+}
+.sc .row-l span {
+  color: var(--mute);
+}
+.sc .res {
+  margin-top: 0.6rem;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba(108, 92, 255, 0.25),
+    rgba(34, 211, 238, 0.15)
+  );
+  font-weight: 700;
+  font-family: "Sora";
+  font-size: 0.95rem;
+}
+
+/* 5. approach */
+.ap {
+  position: relative;
+  padding-top: 2.5rem;
+}
+.ap .rail {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--line);
+}
+.ap .rail i {
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  background: linear-gradient(90deg, var(--a), var(--b));
+}
+.stp {
+  position: relative;
+  height: 100%;
+}
+.stp::before {
+  content: "";
+  position: absolute;
+  top: -2.5rem;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 3px solid var(--line);
+  transition: 0.4s;
+}
+.stp.on::before {
+  border-color: var(--b);
+  box-shadow: 0 0 0 6px rgba(34, 211, 238, 0.18);
+}
+.stp .n {
+  font-family: "Sora";
+  font-weight: 800;
+  font-size: 3.4rem;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.28);
+  transition: 0.4s;
+}
+.stp.on .n {
+  -webkit-text-stroke-color: var(--b);
+}
+.stp h4 {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin: 0.6rem 0;
+}
+.stp .bl li {
+  padding: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* 6. outcomes */
+.oc {
+  text-align: left;
+}
+.oc .lab {
+  display: inline-block;
+  border: 1px solid var(--line);
+  border-radius: 50px;
+  padding: 0.25rem 0.9rem;
+  font-size: 0.8rem;
+  color: var(--b);
+  margin-bottom: 1.2rem;
+}
+.oc .num {
+  font-family: "Sora";
+  font-size: clamp(3rem, 5vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.8rem;
+}
+.oc p {
+  margin: 0;
+}
+
+/* related */
+.rel {
+  display: block;
+  color: var(--ink);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 1.4rem 1.6rem;
+  transition: 0.3s;
+}
+.rel:hover {
+  border-color: var(--b);
+  color: #fff;
+  transform: translateY(-4px);
+}
+.rel small {
+  color: var(--mute);
+  display: block;
+}
+.nf {
+  padding: 12rem 0 8rem;
+  text-align: center;
+}
+.nf p {
+  margin-inline: auto;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: var(--panel);
+    padding: 1rem;
+    border-radius: 16px;
+    margin-top: 0.8rem;
+  }
+  .pad {
+    padding: 5rem 0;
+  }
+  .hero {
+    padding: 8.5rem 0 3rem;
+  }
+  .ap {
+    padding-top: 0;
+  }
+  .ap .rail,
+  .stp::before {
+    display: none;
+  }
+}

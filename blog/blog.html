@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog: Software Development Insights | Kodeon</title>
+    <meta
+      name="description"
+      content="Practical articles on product, engineering, design, cloud and AI from the Kodeon team."
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/assets/css/base.css" rel="stylesheet" />
+    <link href="/assets/css/blog.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="progress"></div>
+    <div class="glow-cursor"></div>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+      <div class="container">
+        <a class="brand" href="index.html"><i></i>Kodeon</a>
+        <button
+          class="navbar-toggler border-0"
+          data-bs-toggle="collapse"
+          data-bs-target="#nv"
+          aria-label="Menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nv">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="process.html">Process</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="careers.html">Careers</a>
+            </li>
+          </ul>
+          <a href="start-project.html" class="btn btn-glow">Start a project</a>
+        </div>
+      </div>
+    </nav>
+
+    <header class="phero lhero">
+      <div
+        class="orb"
+        style="
+          width: 440px;
+          height: 440px;
+          background: var(--a);
+          top: -120px;
+          right: -100px;
+        "
+        id="o1"
+      ></div>
+      <div
+        class="orb"
+        style="
+          width: 320px;
+          height: 320px;
+          background: var(--c);
+          bottom: -120px;
+          left: 10%;
+          opacity: 0.2;
+        "
+        id="o2"
+      ></div>
+      <div class="container position-relative">
+        <div class="crumb mb-4 fade-in">
+          <a href="index.html">Home</a> / Blog
+        </div>
+        <h1 id="headline" class="mb-4">
+          Ideas for building software that lasts.
+        </h1>
+        <p class="fs-5 mb-4 fade-in">
+          Practical articles on product, engineering, design, cloud and AI from
+          the people who build it every day.
+        </p>
+        <label class="search fade-in"
+          ><span class="visually-hidden">Search articles</span
+          ><input
+            id="q"
+            type="search"
+            placeholder="Search articles"
+            autocomplete="off"
+        /></label>
+      </div>
+    </header>
+    <section class="pad" style="padding-top: 3rem">
+      <div class="container">
+        <div
+          class="filters"
+          id="filters"
+          role="group"
+          aria-label="Filter by topic"
+        >
+          <button class="on" data-f="all">All</button
+          ><button data-f="Product">Product</button
+          ><button data-f="Engineering">Engineering</button
+          ><button data-f="Cloud">Cloud</button
+          ><button data-f="Design">Design</button
+          ><button data-f="AI">AI</button>
+        </div>
+        <!-- EDIT: one .pcard per post. data-cat is the category; href is the post page -->
+        <div class="pgrid feat-on" id="grid">
+          <a
+            class="card-x pcard"
+            data-cat="Product"
+            data-text="how to scope an mvp in two weeks a practical method for deciding what goes into your first release, and what definitely does not. product"
+            href="blog-how-to-scope-an-mvp.html"
+            ><div class="cover g1"><span>🎯</span></div>
+            <div class="pb">
+              <span class="pill">Product</span>
+              <h3>How to scope an MVP in two weeks</h3>
+              <p>
+                A practical method for deciding what goes into your first
+                release, and what definitely does not.
+              </p>
+              <div class="meta">
+                <span class="av g1">AR</span
+                ><span><b>Arun Raj</b> · Sep 24, 2026 · 6 min read</span>
+              </div>
+            </div></a
+          ><a
+            class="card-x pcard"
+            data-cat="Engineering"
+            data-text="react native or flutter: which should you choose? both build great cross-platform apps. here is how to decide based on your team, your product and your timeline. engineering"
+            href="blog-react-native-vs-flutter.html"
+            ><div class="cover g2"><span>📱</span></div>
+            <div class="pb">
+              <span class="pill">Engineering</span>
+              <h3>React Native or Flutter: which should you choose?</h3>
+              <p>
+                Both build great cross-platform apps. Here is how to decide
+                based on your team, your product and your timeline.
+              </p>
+              <div class="meta">
+                <span class="av g2">PS</span
+                ><span><b>Priya Suresh</b> · Sep 10, 2026 · 7 min read</span>
+              </div>
+            </div></a
+          ><a
+            class="card-x pcard"
+            data-cat="Cloud"
+            data-text="seven ways to cut your cloud bill without slowing down practical, low-risk ways to reduce cloud spending while keeping performance and reliability intact. cloud"
+            href="blog-cut-your-cloud-bill.html"
+            ><div class="cover g4"><span>☁️</span></div>
+            <div class="pb">
+              <span class="pill">Cloud</span>
+              <h3>Seven ways to cut your cloud bill without slowing down</h3>
+              <p>
+                Practical, low-risk ways to reduce cloud spending while keeping
+                performance and reliability intact.
+              </p>
+              <div class="meta">
+                <span class="av g2">PS</span
+                ><span><b>Priya Suresh</b> · Aug 27, 2026 · 6 min read</span>
+              </div>
+            </div></a
+          ><a
+            class="card-x pcard"
+            data-cat="Design"
+            data-text="why every startup needs a design system early a small shared set of components saves time from the first sprint and keeps your product looking like one product. design"
+            href="blog-design-systems-for-startups.html"
+            ><div class="cover g3"><span>🎨</span></div>
+            <div class="pb">
+              <span class="pill">Design</span>
+              <h3>Why every startup needs a design system early</h3>
+              <p>
+                A small shared set of components saves time from the first
+                sprint and keeps your product looking like one product.
+              </p>
+              <div class="meta">
+                <span class="av g3">KM</span
+                ><span><b>Karthik Menon</b> · Aug 12, 2026 · 5 min read</span>
+              </div>
+            </div></a
+          ><a
+            class="card-x pcard"
+            data-cat="AI"
+            data-text="ai features that customers actually use how to find ai use cases that solve a real problem, and how to ship them safely. ai"
+            href="blog-ai-features-that-work.html"
+            ><div class="cover g5"><span>🤖</span></div>
+            <div class="pb">
+              <span class="pill">AI</span>
+              <h3>AI features that customers actually use</h3>
+              <p>
+                How to find AI use cases that solve a real problem, and how to
+                ship them safely.
+              </p>
+              <div class="meta">
+                <span class="av g2">PS</span
+                ><span><b>Priya Suresh</b> · Jul 29, 2026 · 7 min read</span>
+              </div>
+            </div></a
+          ><a
+            class="card-x pcard"
+            data-cat="Product"
+            data-text="how to choose a software development partner questions to ask, red flags to watch for, and how to run a small paid trial before you commit. product"
+            href="blog-choosing-a-development-partner.html"
+            ><div class="cover g6"><span>🤝</span></div>
+            <div class="pb">
+              <span class="pill">Product</span>
+              <h3>How to choose a software development partner</h3>
+              <p>
+                Questions to ask, red flags to watch for, and how to run a small
+                paid trial before you commit.
+              </p>
+              <div class="meta">
+                <span class="av g1">AR</span
+                ><span><b>Arun Raj</b> · Jul 15, 2026 · 6 min read</span>
+              </div>
+            </div></a
+          >
+        </div>
+        <p class="none" id="none" hidden>
+          No articles match your search. Try a different word or topic.
+        </p>
+      </div>
+    </section>
+    <section class="pb-5">
+      <div class="container">
+        <div class="news" id="news">
+          <div>
+            <h2 class="big mb-2">Get new articles by email</h2>
+            <p class="mb-0">
+              One useful email a month. No spam, unsubscribe any time.
+            </p>
+          </div>
+          <form id="nl" novalidate>
+            <div class="nl-row">
+              <input
+                id="nlmail"
+                type="email"
+                placeholder="you@company.com"
+                aria-label="Email address"
+                autocomplete="email"
+              /><button class="btn btn-glow" type="submit">Subscribe</button>
+            </div>
+            <div class="nl-msg" id="nlmsg" role="status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-5">
+            <a class="brand" href="index.html"><i></i>Kodeon</a>
+            <p class="mt-3">
+              Custom software development for startups and scale-ups.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white mb-3">Company</h6>
+            <a href="about.html">About</a><br /><a href="work.html">Work</a
+            ><br /><a href="testimonials.html">Testimonials</a><br /><a
+              href="blog.html"
+              >Blog</a
+            ><br /><a href="careers.html">Careers</a>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h6 class="text-white mb-3">Services</h6>
+            <a href="service.html?s=web-development">Web</a><br /><a
+              href="service.html?s=mobile-app-development"
+              >Mobile</a
+            ><br /><a href="service.html?s=cloud-devops">Cloud</a>
+          </div>
+          <div class="col-lg-3">
+            <h6 class="text-white mb-3">Contact</h6>
+            <a href="mailto:hello@kodeon.com">hello@kodeon.com</a><br /><a
+              href="#"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+        <p class="mt-5 mb-0 small">© 2026 Kodeon. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="/assets/js/blog.js"></script>
+  </body>
+</html>
