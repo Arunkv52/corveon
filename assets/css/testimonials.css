@@ -1,0 +1,412 @@
+/* testimonials page styles (loads after base.css) */
+.nav-link:hover,
+.nav-link.active {
+  color: #fff !important;
+}
+.btn-ghost {
+  border: 1px solid var(--line);
+  color: var(--ink);
+  border-radius: 50px;
+  padding: 0.8rem 1.8rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-ghost:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.4;
+  pointer-events: none;
+}
+.cta p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-inline: auto;
+}
+footer a {
+  color: var(--mute);
+  line-height: 2;
+}
+footer a:hover {
+  color: #fff;
+}
+.sh {
+  margin-bottom: 2.5rem;
+}
+.sh .kick {
+  display: inline-block;
+  color: var(--b);
+  font-family: "Sora";
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+}
+
+/* hero */
+.hero {
+  position: relative;
+  padding: 10.5rem 0 4rem;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse at 30% 30%, #000 10%, transparent 70%);
+  -webkit-mask-image: radial-gradient(
+    ellipse at 30% 30%,
+    #000 10%,
+    transparent 70%
+  );
+  opacity: 0.5;
+}
+.hero h1 {
+  font-size: clamp(2.4rem, 5.6vw, 4.8rem);
+  font-weight: 800;
+  line-height: 1.05;
+}
+.hero h1 .w {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: 0.08em;
+}
+.hero h1 .w span {
+  display: inline-block;
+  transform: translateY(110%);
+}
+.crumb {
+  color: var(--mute);
+  font-size: 0.9rem;
+}
+.panel {
+  background: rgba(14, 16, 48, 0.8);
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 40px 80px -30px #000;
+}
+.score {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+}
+.score span {
+  font-family: "Sora";
+  font-weight: 800;
+  font-size: 4.6rem;
+  line-height: 1;
+}
+.score small {
+  color: var(--mute);
+}
+.stars {
+  color: #fbbf24;
+  letter-spacing: 0.15em;
+  font-size: 1.1rem;
+  margin: 0.4rem 0 0.6rem;
+}
+.brow {
+  display: grid;
+  grid-template-columns: 32px 1fr 40px;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 0.85rem;
+  margin: 0.55rem 0;
+  color: var(--mute);
+}
+.brow div {
+  height: 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+.brow i {
+  display: block;
+  height: 100%;
+  width: var(--w);
+  border-radius: 8px;
+  background: linear-gradient(90deg, var(--a), var(--b));
+  transform-origin: 0 50%;
+}
+.brow b {
+  text-align: right;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* featured slider */
+.feat {
+  background: linear-gradient(60deg, #1e3a5f, #c8a96a);;
+  border: 1px solid var(--line);
+  border-radius: 32px;
+  padding: clamp(1.8rem, 4vw, 3.5rem);
+  position: relative;
+  overflow: hidden;
+}
+.feat::before {
+  content: "\201C";
+  position: absolute;
+  top: -1.2rem;
+  left: 1.5rem;
+  font-family: "Sora";
+  font-size: 12rem;
+  line-height: 1;
+  color: rgba(108, 92, 255, 0.22);
+  pointer-events: none;
+}
+.slides {
+  display: grid;
+  position: relative;
+}
+.slide {
+  grid-area: 1/1;
+  margin: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.slide.on {
+  opacity: 1;
+  visibility: visible;
+}
+.slide blockquote {
+  font-family: "Sora";
+  font-weight: 700;
+  font-size: clamp(1.4rem, 2.8vw, 2.3rem);
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  margin: 0 0 2rem;
+  max-width: 30ch;
+  position: relative;
+}
+.slide figcaption {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.slide b {
+  display: block;
+}
+.slide small {
+  color: var(--mute);
+}
+.res {
+  margin-left: auto;
+  padding: 0.6rem 1.1rem;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba(108, 92, 255, 0.3),
+    rgba(34, 211, 238, 0.2)
+  );
+  font-family: "Sora";
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.av {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: "Sora";
+  font-weight: 800;
+  font-size: 0.9rem;
+  flex: none;
+}
+.ctrl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+.dots {
+  display: flex;
+  gap: 0.5rem;
+}
+.dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0;
+  transition: 0.4s;
+}
+.dots button.on {
+  width: 34px;
+  background: linear-gradient(90deg, var(--a), var(--b));
+}
+.arrows {
+  display: flex;
+  gap: 0.6rem;
+}
+.arrows button {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+.arrows button:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+/* stats */
+.stat {
+  border-left: 1px solid var(--line);
+  padding-left: 1.5rem;
+}
+.stat h3 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #c8a96a;
+}
+
+/* wall */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+.filters button {
+  background: transparent;
+  color: var(--mute);
+  border: 1px solid var(--line);
+  border-radius: 50px;
+  padding: 0.55rem 1.3rem;
+  font-weight: 600;
+  font-family: inherit;
+  transition: 0.3s;
+}
+.filters button:hover {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+.filters button.on {
+  background: linear-gradient(60deg, #1e3a5f, #c8a96a);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 10px 30px -10px var(--a);
+}
+.wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr));
+  gap: 1.5rem;
+}
+.card-x {
+  background: linear-gradient(120deg, #1e3a5f, #c8a96a);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.4s,
+    border-color 0.4s;
+}
+.card-x::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    400px circle at var(--x, 50%) var(--y, 0),
+    rgba(108, 92, 255, 0.25),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: 0.4s;
+}
+.card-x:hover {
+  transform: translateY(-8px);
+  border-color: rgba(108, 92, 255, 0.6);
+}
+.card-x:hover::after {
+  opacity: 1;
+}
+.card-x > * {
+  position: relative;
+  z-index: 1;
+}
+.tcard {
+  display: flex;
+  flex-direction: column;
+}
+.tcard p {
+  color: #c9cbe8;
+  flex: 1;
+  max-width: none;
+}
+.tcard .stars {
+  margin: 0 0 1rem;
+}
+.who {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 1rem 0;
+}
+.who b {
+  display: block;
+  font-size: 0.95rem;
+}
+.who small {
+  color: var(--mute);
+}
+.svc-tag {
+  align-self: flex-start;
+  border: 1px solid var(--line);
+  border-radius: 50px;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.78rem;
+  color: var(--b);
+}
+
+/* client strip */
+.marq {
+  border-block: 1px solid var(--line);
+  overflow: hidden;
+  padding: 1.4rem 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+.track {
+  display: flex;
+  gap: 4rem;
+  width: max-content;
+  font-family: "Sora";
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #4b4f7a;
+}
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: var(--panel);
+    padding: 1rem;
+    border-radius: 16px;
+    margin-top: 0.8rem;
+  }
+  .pad {
+    padding: 5rem 0;
+  }
+  .hero {
+    padding: 8.5rem 0 3rem;
+  }
+  .res {
+    margin-left: 0;
+  }
+}

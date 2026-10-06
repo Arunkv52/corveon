@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Corveon | Custom Software Development Company</title>
+  <meta name="description"
+    content="Corveon designs and builds web, mobile and cloud software for ambitious startups and scale-ups." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link href="assets/css/base.css" rel="stylesheet" />
+  <link href="assets/css/index.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="progress"></div>
+  <div class="glow-cursor"></div>
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+      <a class="brand" href="index.html"><i></i>Corveon</a>
+      <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nv" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nv">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About us</a>
+          </li>
+
+          <!-- Services is now ONE item: the dropdown (the separate Services link was removed) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/services/web-development.html">Web Development</a></li>
+              <li><a class="dropdown-item" href="service.html?s=ai-integration">AI &amp; Analysis</a></li>
+              <li><a class="dropdown-item" href="service.html?s=ui-ux-design">UI / UX Design</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="services.html">All services</a></li>
+            </ul>
+          </li>
+
+         
+          <li class="nav-item">
+            <a class="nav-link" href="careers.html">Careers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="testimonials.html">Testimonials</a>
+          </li>
+        </ul>
+        <a href="start-project.html" class="btn btn-glow">Start a project</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="orb o1"></div>
+    <div class="orb o2"></div>
+    <div class="orb o3"></div>
+    <div class="container position-relative">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <span class="tag mb-4 fade-in"><b></b>Booking new projects for Q4</span>
+          <h1 id="headline" class="mb-4">
+            We build software that helps startups grow faster.
+          </h1>
+          <p class="fs-5 mb-4 fade-in">
+            Corveon is a product engineering team for web apps, mobile apps
+            and cloud platforms. From first prototype to millions of users.
+          </p>
+          <div class="d-flex flex-wrap gap-3 fade-in">
+            <a href="start-project.html" class="btn btn-glow">Book a free consultation</a>
+            <a href="#work" class="btn btn-ghost">See our work</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="visual" id="visual">
+            <div class="code">
+              <div class="dots"><span></span><span></span><span></span></div>
+              <pre><span class="k">const</span> product = <span class="k">await</span> <span class="f">Corveon</span>.build({
+  idea:   <span class="s">"your startup"</span>,
+  stack:  [<span class="s">"React"</span>, <span class="s">"Node"</span>, <span class="s">"AWS"</span>],
+  launch: <span class="s">"in 12 weeks"</span>
+});
+<span class="f">console</span>.log(<span class="s">"Shipped."</span>);</pre>
+            </div>
+            <div class="chip" style="top: -6px; right: -10px">
+              ⚡ 99.9% uptime
+            </div>
+            <div class="chip" style="bottom: 0; left: -24px">
+              🚀 Deployed to production
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="marq">
+    <div class="track" id="track">
+      <span>React</span><span>Next.js</span><span>Node.js</span><span>Python</span><span>Flutter</span><span>AWS</span><span>Docker</span><span>PostgreSQL</span><span>TypeScript</span><span>Kubernetes</span>
+      <span>React</span><span>Next.js</span><span>Node.js</span><span>Python</span><span>Flutter</span><span>AWS</span><span>Docker</span><span>PostgreSQL</span><span>TypeScript</span><span>Kubernetes</span>
+    </div>
+  </div>
+
+  <!-- <section class="pad">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-6 col-lg-3 stat">
+          <h3 class="grad"><span class="cnt" data-n="120">0</span>+</h3>
+          <p class="mb-0">Products delivered</p>
+        </div>
+        <div class="col-6 col-lg-3 stat">
+          <h3 class="grad"><span class="cnt" data-n="45">0</span>+</h3>
+          <p class="mb-0">Engineers and designers</p>
+        </div>
+        <div class="col-6 col-lg-3 stat">
+          <h3 class="grad"><span class="cnt" data-n="98">0</span>%</h3>
+          <p class="mb-0">Clients who return</p>
+        </div>
+        <div class="col-6 col-lg-3 stat">
+          <h3 class="grad"><span class="cnt" data-n="12">0</span></h3>
+          <p class="mb-0">Countries served</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="services" class="pt-5 pb-2">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-7">
+          <h2 class="big mb-3 reveal">
+            Everything you need to ship a great product
+          </h2>
+          <p class="reveal">
+            One team covers strategy, design, engineering and support, so
+            nothing gets lost between vendors.
+          </p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="svc">
+            <div class="ico">🌐</div>
+            <h4>Web development</h4>
+            <p>
+              Fast, secure web apps and portals built with React, Next.js and
+              Node.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="svc">
+            <div class="ico">📱</div>
+            <h4>Mobile apps</h4>
+            <p>
+              iOS and Android apps with Flutter or React Native, from one
+              codebase.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="svc">
+            <div class="ico">☁️</div>
+            <h4>Cloud and DevOps</h4>
+            <p>
+              AWS setup, CI/CD pipelines and monitoring that scale with your
+              traffic.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="svc">
+            <div class="ico">🎨</div>
+            <h4>UI/UX design</h4>
+            <p>
+              Research-led interfaces that are simple to use and pleasant to
+              look at.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="svc">
+            <div class="ico">🤖</div>
+            <h4>AI integration</h4>
+            <p>
+              Add chatbots, search and automation to your product with modern
+              AI APIs.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="svc">
+            <div class="ico">🧩</div>
+            <h4>Dedicated teams</h4>
+            <p>
+              Extend your in-house team with developers who work in your
+              process.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section id="work" class="work pad" style="padding-bottom: 0">
+    <div class="container mb-5">
+      <h2 class="big mb-3">Work we are proud of</h2>
+      <p>Keep scrolling to explore a few recent products.</p>
+    </div>
+    <div id="pin" style="padding-bottom: 6rem">
+      <div class="rail" id="rail">
+        <article class="case c1">
+          <div>
+            <span class="pill">Fintech</span><span class="pill">React</span><span class="pill">Node.js</span>
+          </div>
+          <div>
+            <h3>PayLoop</h3>
+            <p>
+              A payments dashboard that cut reconciliation time for finance
+              teams.
+            </p>
+          </div>
+          <div class="big-n">-60%</div>
+        </article>
+        <article class="case c2">
+          <div>
+            <span class="pill">Healthcare</span><span class="pill">Flutter</span>
+          </div>
+          <div>
+            <h3>CareSync</h3>
+            <p>
+              A patient booking app used by 200 clinics across three
+              countries.
+            </p>
+          </div>
+          <div class="big-n">4.8★</div>
+        </article>
+        <article class="case c3">
+          <div>
+            <span class="pill">E-commerce</span><span class="pill">Next.js</span><span class="pill">AWS</span>
+          </div>
+          <div>
+            <h3>Shoply</h3>
+            <p>
+              A headless storefront that handled Black Friday without a single
+              outage.
+            </p>
+          </div>
+          <div class="big-n">3x</div>
+        </article>
+        <article class="case c4">
+          <div>
+            <span class="pill">SaaS</span><span class="pill">AI</span><span class="pill">Python</span>
+          </div>
+          <div>
+            <h3>DocuMind</h3>
+            <p>
+              An AI assistant that answers questions from company documents.
+            </p>
+          </div>
+          <div class="big-n">10k+</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="pad">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <div style="position: sticky; top: 120px">
+            <h2 class="big mb-3">From idea to launch in four steps</h2>
+            <p>
+              A clear process with weekly demos, so you always know where your
+              product stands.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-7 position-relative ps-lg-5">
+          <div class="bar d-none d-lg-block"><i id="bar"></i></div>
+          <div class="step">
+            <div class="n">01</div>
+            <div>
+              <h4>Discover</h4>
+              <p class="mb-0">
+                We workshop goals, users and scope, then agree a roadmap and
+                estimate.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="n">02</div>
+            <div>
+              <h4>Design</h4>
+              <p class="mb-0">
+                Wireframes and clickable prototypes you can test with real
+                users.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="n">03</div>
+            <div>
+              <h4>Build</h4>
+              <p class="mb-0">
+                Two-week sprints with working software and a demo at the end
+                of each.
+              </p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="n">04</div>
+            <div>
+              <h4>Launch and grow</h4>
+              <p class="mb-0">
+                We deploy, monitor and keep improving your product after
+                release.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="pb-5">
+    <div class="container">
+      <div class="cta" id="cta">
+        <h2 class="big mb-3">Have an idea? Let's build it.</h2>
+        <p class="mb-4">
+          Tell us what you are working on and we will reply within one
+          business day.
+        </p>
+        <a href="start-project.html" class="btn-w">Talk to our team</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <a class="brand" href="#"><i></i>Corveon</a>
+          <p class="mt-3">
+            Custom software development for startups and scale-ups.
+          </p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white mb-3">Company</h6>
+          <a href="about.html">About</a><br /><a href="careers.html">Careers</a><br /><a href="work.html">Work</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white mb-3">Services</h6>
+          <a href="web-development.html">Web</a><br /><a href="services.html">Mobile</a><br /><a
+            href="services.html">Cloud</a>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="text-white mb-3">Contact</h6>
+          <a href="mailto:hello@Corveon.com">hello@Corveon.com</a><br /><a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <p class="mt-5 mb-0 small">© 2026 Corveon. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>

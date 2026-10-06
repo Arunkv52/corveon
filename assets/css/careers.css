@@ -1,0 +1,259 @@
+/* careers page styles */
+.nav-link:hover,
+.nav-link.active {
+  color: #fff !important;
+}
+.btn-ghost {
+  border: 1px solid var(--line);
+  color: var(--ink);
+  border-radius: 50px;
+  padding: 0.8rem 1.8rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.btn-ghost:hover {
+  background: var(--ink);
+  color: var(--bg);
+}
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.4;
+  pointer-events: none;
+}
+.hero {
+  position: relative;
+  padding: 11rem 0 4rem;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse at 30% 30%, #000 10%, transparent 70%);
+  -webkit-mask-image: radial-gradient(
+    ellipse at 30% 30%,
+    #000 10%,
+    transparent 70%
+  );
+  opacity: 0.5;
+}
+.hero h1 {
+  font-size: clamp(2.6rem, 6.4vw, 5.4rem);
+  font-weight: 800;
+  line-height: 1.04;
+}
+.hero h1 .w {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: 0.08em;
+}
+.hero h1 .w span {
+  display: inline-block;
+  transform: translateY(110%);
+}
+@keyframes ping {
+  0% {
+    box-shadow: 0 0 0 0 #22c55e;
+  }
+  70%,
+  100% {
+    box-shadow: 0 0 0 10px transparent;
+  }
+}
+.stat {
+  border-left: 1px solid var(--line);
+  padding-left: 1.5rem;
+}
+.stat h3 {
+  font-size: 3.4rem;
+  font-weight: 800;
+  color: #c8a96a;
+}
+.card-x {
+  background: linear-gradient(60deg, #1e3a5f, #c8a96a);;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 2rem;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.4s,
+    border-color 0.4s;
+}
+.card-x::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(60deg, #1e3a5f, #c8a96a);
+  opacity: 0;
+  transition: 0.4s;
+}
+.card-x:hover {
+  transform: translateY(-8px);
+  border-color: linear-gradient(60deg, #1e3a5f, #c8a96a);
+}
+.card-x:hover::after {
+  opacity: 1;
+}
+.card-x > * {
+  position: relative;
+  z-index: 1;
+}
+.ico {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  background: linear-gradient(
+    135deg,
+    rgba(108, 92, 255, 0.3),
+    rgba(34, 211, 238, 0.2)
+  );
+  margin-bottom: 1.4rem;
+}
+/* roles */
+.fl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.8rem;
+}
+.fl button {
+  background: transparent;
+  color: var(--mute);
+  border: 1px solid var(--line);
+  border-radius: 50px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  font-family: inherit;
+  transition: 0.3s;
+}
+.fl button:hover {
+  color: #fff;
+}
+.fl button.on {
+  background: linear-gradient(60deg, #1e3a5f, #c8a96a);
+  border-color: transparent;
+  color: #fff;
+}
+.role {
+  border-top: 1px solid var(--line);
+}
+.role:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.rh {
+  width: 100%;
+  background: none;
+  border: 0;
+  color: var(--ink);
+  text-align: left;
+  padding: 1.6rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: inherit;
+}
+.rh h4 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  flex: 1;
+  transition: color 0.3s;
+}
+.rh:hover h4 {
+  color: var(--b);
+}
+.meta span {
+  display: inline-block;
+  border: 1px solid var(--line);
+  border-radius: 50px;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.78rem;
+  color: var(--mute);
+  margin-left: 0.4rem;
+}
+.plus {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+  transition:
+    transform 0.4s,
+    background 0.3s;
+  flex: none;
+}
+.rh[aria-expanded="true"] .plus {
+  transform: rotate(45deg);
+  background: var(--a);
+  border-color: var(--a);
+}
+.rb {
+  padding: 0 0 2rem;
+}
+.rb ul {
+  color: var(--mute);
+  padding-left: 1.1rem;
+}
+.rb li {
+  margin: 0.35rem 0;
+}
+.rb h6 {
+  font-family: "Sora";
+  margin-top: 1rem;
+}
+/* hiring steps */
+.hs {
+  display: flex;
+  gap: 1.4rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.hs .n {
+  font-family: "Sora";
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--b);
+  min-width: 2.5rem;
+}
+.cta p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-inline: auto;
+}
+footer a {
+  color: var(--mute);
+  line-height: 2;
+}
+footer a:hover {
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: var(--panel);
+    padding: 1rem;
+    border-radius: 16px;
+    margin-top: 0.8rem;
+  }
+  .pad {
+    padding: 5rem 0;
+  }
+  .hero {
+    padding: 9rem 0 3rem;
+  }
+  .meta {
+    display: none;
+  }
+}

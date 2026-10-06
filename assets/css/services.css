@@ -1,0 +1,501 @@
+/* Services page styles (loads after base.css) */
+
+/* ---------- navbar: active link + Services dropdown ---------- */
+.nav-link:hover,
+.nav-link.active {
+  color: #fff !important;
+}
+
+/* Services dropdown in the site's dark theme. Link this after base.css. */
+.navbar .dropdown-menu {
+  --bs-dropdown-bg: #0e1030;
+  --bs-dropdown-border-color: rgba(255, 255, 255, 0.1);
+  --bs-dropdown-border-radius: 16px;
+  --bs-dropdown-padding-x: 0.5rem;
+  --bs-dropdown-padding-y: 0.5rem;
+  --bs-dropdown-link-color: #f2f3ff;
+  --bs-dropdown-link-hover-color: #fff;
+  --bs-dropdown-link-hover-bg: rgba(108, 92, 255, 0.22);
+  --bs-dropdown-link-active-bg: #6c5cff;
+  --bs-dropdown-divider-bg: rgba(255, 255, 255, 0.1);
+  min-width: 600px;
+  box-shadow: 0 24px 60px -20px #000;
+}
+.navbar .dropdown-item {
+  border-radius: 10px;
+  padding: 0.6rem 0.9rem;
+  font-weight: 500;
+  transition:
+    background 0.2s,
+    padding-left 0.2s;
+}
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  padding-left: 1.2rem;
+}
+.navbar .dropdown-toggle::after {
+  margin-left: 0.45rem;
+  transition: transform 0.3s;
+}
+.navbar .dropdown-toggle.show::after {
+  transform: rotate(180deg);
+}
+.navbar .dropdown-menu.show {
+  animation: ddIn 0.25s ease both;
+}
+@keyframes ddIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+/* desktop: also open on hover (click and keyboard still work) */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+    animation: ddIn 0.25s ease both;
+  }
+  .navbar .dropdown:hover > .dropdown-toggle::after {
+    transform: rotate(180deg);
+  }
+  .navbar .dropdown-menu {
+    margin-top: 0.6rem;
+  }
+  .navbar .dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -0.7rem;
+    left: 0;
+    right: 0;
+    height: 0.7rem;
+  }
+}
+/* phones: sits inside the open menu, no floating card */
+@media (max-width: 991px) {
+  .navbar .dropdown-menu {
+    --bs-dropdown-bg: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0 0 0 0.8rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .navbar .dropdown-menu,
+  .navbar .dropdown-item {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* ---------- hero ---------- */
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.4;
+  pointer-events: none;
+}
+.hero {
+  position: relative;
+  padding: 11rem 0 5rem;
+  overflow: hidden;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(ellipse at 30% 30%, #000 10%, transparent 70%);
+  -webkit-mask-image: radial-gradient(
+    ellipse at 30% 30%,
+    #000 10%,
+    transparent 70%
+  );
+  opacity: 0.5;
+}
+.hero h1 {
+  font-size: clamp(2.6rem, 6.4vw, 5.4rem);
+  font-weight: 800;
+  line-height: 1.04;
+}
+.hero h1 .w {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: 0.08em;
+}
+.hero h1 .w span {
+  display: inline-block;
+  transform: translateY(110%);
+}
+
+/* ---------- stories: sideways scroll, one brand colour ---------- */
+.work {
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--bg), #0b0d2b 50%, var(--bg));
+}
+.rail {
+  display: flex;
+  gap: 2rem;
+  padding: 0 8vw;
+  width: max-content;
+}
+.story-card {
+  width: min(82vw, 640px);
+  flex: none;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  min-height: 440px;
+  padding: 2.4rem;
+  border-radius: 28px;
+  background: linear-gradient(
+    150deg,
+    rgba(108, 92, 255, 0.28),
+    var(--panel) 60%
+  );
+  border: 1px solid var(--line);
+  transition:
+    transform 0.4s,
+    border-color 0.4s;
+}
+.story-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(108, 92, 255, 0.6);
+}
+.sc-no {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.8rem;
+  font-family: "Sora";
+  font-weight: 800;
+  font-size: 5.5rem;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+}
+.sc-tags span {
+  display: inline-block;
+  border: 1px solid var(--line);
+  border-radius: 50px;
+  padding: 0.25rem 0.9rem;
+  font-size: 0.8rem;
+  margin: 0 0.4rem 0.4rem 0;
+  color: var(--mute);
+}
+.story-card h3 {
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin: 0.4rem 0 0;
+}
+.story-card dl {
+  margin: 0;
+  flex: 1;
+}
+.story-card dt {
+  font-family: "Sora";
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--b);
+  margin-top: 0.9rem;
+}
+.story-card dd {
+  margin: 0.2rem 0 0;
+  color: var(--mute);
+  max-width: 46ch;
+}
+.sc-result {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1.2rem;
+}
+.sc-result b {
+  font-family: "Sora";
+  font-size: 3.6rem;
+  font-weight: 800;
+  line-height: 1;
+}
+.sc-result span {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* ---------- ways of working ---------- */
+.eng {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 2.2rem;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.4s,
+    border-color 0.4s;
+}
+.eng::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    400px circle at var(--x, 50%) var(--y, 0),
+    rgba(108, 92, 255, 0.25),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: 0.4s;
+}
+.eng:hover {
+  transform: translateY(-8px);
+  border-color: rgba(108, 92, 255, 0.6);
+}
+.eng:hover::after {
+  opacity: 1;
+}
+.eng > * {
+  position: relative;
+  z-index: 1;
+}
+.eng.hot {
+  border-color: rgba(108, 92, 255, 0.7);
+  box-shadow: 0 30px 70px -30px var(--a);
+}
+.eng .best {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--a), var(--b));
+  border-radius: 50px;
+  padding: 0.2rem 0.8rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.eng ul {
+  padding-left: 1.1rem;
+  color: var(--mute);
+  margin: 1rem 0 0;
+}
+.eng li {
+  margin: 0.4rem 0;
+}
+
+/* ---------- tools ---------- */
+.tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+.tech span {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 14px;
+  padding: 0.8rem 1.3rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.tech span:hover {
+  border-color: var(--b);
+  color: var(--b);
+  transform: translateY(-4px);
+}
+.tg {
+  font-family: "Sora";
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+  color: var(--mute);
+  font-size: 1rem;
+}
+
+/* ---------- faq, cta, footer ---------- */
+.accordion {
+  --bs-accordion-bg: transparent;
+  --bs-accordion-border-color: var(--line);
+  --bs-accordion-color: var(--ink);
+  --bs-accordion-btn-color: var(--ink);
+  --bs-accordion-active-bg: transparent;
+  --bs-accordion-active-color: var(--ink);
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-btn-icon-transform: rotate(-180deg);
+}
+.cta p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-inline: auto;
+}
+footer a {
+  color: var(--mute);
+  line-height: 2;
+}
+footer a:hover {
+  color: #fff;
+}
+
+/* ---------- desktop: Services menu also opens on hover ---------- */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+    animation: ddIn 0.25s ease both;
+  }
+  .navbar .dropdown:hover > .dropdown-toggle::after {
+    transform: rotate(180deg);
+  }
+  .navbar .dropdown-menu {
+    margin-top: 0.6rem;
+  }
+  .navbar .dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -0.7rem;
+    left: 0;
+    right: 0;
+    height: 0.7rem;
+  }
+}
+
+/* ---------- tablets and phones ---------- */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: var(--panel);
+    padding: 1rem;
+    border-radius: 16px;
+    margin-top: 0.8rem;
+  }
+  .navbar .dropdown-menu {
+    --bs-dropdown-bg: transparent;
+    border: 0;
+    box-shadow: none;
+    padding: 0 0 0 0.8rem;
+  }
+  .pad {
+    padding: 5rem 0;
+  }
+  .hero {
+    padding: 9rem 0 3rem;
+  }
+  #pin {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .story-card {
+    scroll-snap-align: center;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .navbar .dropdown-menu,
+  .navbar .dropdown-item {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+/* ===== Append to the END of assets/css/services.css ===== */
+
+/* small section label */
+.label {
+  display: inline-block;
+  border: 1px solid var(--line);
+  border-radius: 50px;
+  padding: 0.25rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--mute);
+  margin-bottom: 1.2rem;
+}
+
+/* service card: feature list + Explore link pinned to the bottom */
+.story-card p {
+  color: var(--mute);
+  max-width: 52ch;
+  margin: 0;
+}
+.story-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+}
+.story-card li {
+  position: relative;
+  padding-left: 1.4rem;
+  margin: 0.45rem 0;
+  color: var(--ink);
+}
+.story-card li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--b);
+}
+.sc-result a {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--b);
+  padding-bottom: 2px;
+  transition: gap 0.3s, color 0.3s;
+}
+.sc-result a:hover,
+.sc-result a:focus-visible {
+  color: var(--b);
+  gap: 0.9rem;
+}
+
+/* engagement models table */
+.models {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: var(--panel);
+}
+.models table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+}
+.models th,
+.models td {
+  padding: 1.3rem 1.6rem;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+.models thead th {
+  font-family: "Sora";
+  font-size: 0.85rem;
+  color: var(--mute);
+  font-weight: 600;
+}
+.models tbody th {
+  font-family: "Sora";
+  font-weight: 700;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.models td {
+  color: var(--mute);
+}
+.models tbody tr:last-child th,
+.models tbody tr:last-child td {
+  border-bottom: 0;
+}
+.models tbody tr {
+  transition: background 0.25s;
+}
+.models tbody tr:hover {
+  background: rgba(108, 92, 255, 0.12);
+}

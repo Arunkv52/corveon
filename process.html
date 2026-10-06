@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Process | Corveon Software Development</title>
+  <meta name="description"
+    content="How Corveon takes a product from idea to launch: discovery, design, development, testing, launch and support." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link href="assets/css/base.css" rel="stylesheet" />
+  <link href="assets/css/process.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="progress"></div>
+  <div class="glow-cursor"></div>
+
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+      <a class="brand" href="index.html"><i></i>Corveon</a>
+      <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nv" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nv">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+          <!-- Services: two-column dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Services</a>
+            <div class="dropdown-menu dropdown-menu-mega">
+              <div class="row g-3">
+                <div class="col-12 col-lg-6">
+                  <h6 class="dropdown-header">Core services</h6>
+                  <a class="dropdown-item" href="services/cloud-managed-services.html">
+                    Cloud Managed Services
+                    <small class="d-block">AWS and Azure, designed and run</small>
+                  </a>
+                  <a class="dropdown-item" href="services/crm-erp.html">
+                    CRM &amp; ERP
+                    <small class="d-block">Zoho and ERPNext, end to end</small>
+                  </a>
+                  <a class="dropdown-item" href="services/data-analytics-ai.html">
+                    Data, Analytics &amp; AI
+                    <small class="d-block">Pipelines, dashboards, applied AI</small>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <h6 class="dropdown-header">Other services</h6>
+                  <a class="dropdown-item" href="services/other-services.html">
+                    Other Services
+                    <small class="d-block">Specialised back-office delivery</small>
+                  </a>
+                  <a class="dropdown-item" href="services/us-property-title-search.html">US Property Title Search</a>
+                  <a class="dropdown-item" href="services/medical-billing.html">Medical Billing</a>
+                  <a class="dropdown-item" href="services/annotation.html">Annotation</a>
+                </div>
+              </div>
+              <hr class="dropdown-divider">
+              <a class="dropdown-item" href="/services.html">All services</a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
+          <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
+        </ul>
+        <a href="contact.html" class="btn btn-glow">Start a project</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <header class="hero">
+    <div class="orb" style="
+          width: 440px;
+          height: 440px;
+          background: var(--a);
+          top: -120px;
+          right: -100px;
+        " id="o1"></div>
+    <div class="orb" style="
+          width: 320px;
+          height: 320px;
+          background: var(--b);
+          bottom: -120px;
+          left: 10%;
+          opacity: 0.2;
+        " id="o2"></div>
+    <div class="container position-relative">
+      <div class="crumb mb-4 fade-in">
+        <a href="index.html">Home</a> / Process
+      </div>
+      <h1 id="headline" class="mb-4">
+        A clear path from first idea to live product.
+      </h1>
+      <p class="fs-5 fade-in">
+        Six phases, weekly demos and one point of contact. You always know
+        what we are building, why, and when it ships.
+      </p>
+    </div>
+  </header>
+
+  <section class="pad" style="padding-top: 4rem">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div style="position: sticky; top: 120px">
+            <h2 class="big mb-3">Six phases</h2>
+            <p>
+              Scroll to follow a typical project. Timings are for a standard
+              MVP and vary with scope.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="phases" id="phases">
+            <div class="line"><i id="pbar"></i></div>
+            <!-- EDIT: phases (number, title, duration, text, deliverables) -->
+            <div class="ph">
+              <div class="n">01</div>
+              <h3>Discovery</h3>
+              <span class="dur">Week 1 to 2</span>
+              <p>
+                We meet your team, map user needs, rank features and agree the
+                scope, budget and success metrics.
+              </p>
+              <div class="chips">
+                <span>Workshop</span><span>Feature roadmap</span><span>Estimate</span>
+              </div>
+            </div>
+            <div class="ph">
+              <div class="n">02</div>
+              <h3>Design</h3>
+              <span class="dur">Week 2 to 4</span>
+              <p>
+                Wireframes turn into clickable prototypes. You and real users
+                test them before development starts.
+              </p>
+              <div class="chips">
+                <span>Wireframes</span><span>Figma prototype</span><span>Design system</span>
+              </div>
+            </div>
+            <div class="ph">
+              <div class="n">03</div>
+              <h3>Development</h3>
+              <span class="dur">Week 4 to 10</span>
+              <p>
+                Two-week sprints with working software at the end of each one,
+                plus a live demo and a chance to reprioritise.
+              </p>
+              <div class="chips">
+                <span>Sprint demos</span><span>Code reviews</span><span>Staging site</span>
+              </div>
+            </div>
+            <div class="ph">
+              <div class="n">04</div>
+              <h3>Testing</h3>
+              <span class="dur">Week 8 to 11</span>
+              <p>
+                Automated and manual testing across devices, plus security and
+                performance checks before anything goes live.
+              </p>
+              <div class="chips">
+                <span>QA reports</span><span>Load testing</span><span>Security review</span>
+              </div>
+            </div>
+            <div class="ph">
+              <div class="n">05</div>
+              <h3>Launch</h3>
+              <span class="dur">Week 11 to 12</span>
+              <p>
+                Zero-downtime deployment with monitoring in place, store
+                submissions handled and your team trained.
+              </p>
+              <div class="chips">
+                <span>Deployment</span><span>Monitoring</span><span>Handover docs</span>
+              </div>
+            </div>
+            <div class="ph" style="padding-bottom: 0">
+              <div class="n">06</div>
+              <h3>Growth and support</h3>
+              <span class="dur">Ongoing</span>
+              <p>
+                After launch we fix issues, watch performance and ship
+                improvements based on real user data.
+              </p>
+              <div class="chips">
+                <span>Support plan</span><span>Analytics</span><span>New features</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-7">
+          <h2 class="big mb-3 reveal">A typical 12-week project</h2>
+          <p class="reveal">
+            Phases overlap, so design and development feed each other instead
+            of waiting in line.
+          </p>
+        </div>
+      </div>
+      <div class="gantt reveal">
+        <div class="gw" id="gantt">
+          <span></span><span class="wk">1</span><span class="wk">2</span><span class="wk">3</span><span
+            class="wk">4</span><span class="wk">5</span><span class="wk">6</span><span class="wk">7</span><span
+            class="wk">8</span><span class="wk">9</span><span class="wk">10</span><span class="wk">11</span><span
+            class="wk">12</span>
+          <!-- EDIT: left and width are percentages of the 12 weeks -->
+          <span class="lab">Discovery</span>
+          <div class="track"><b style="left: 0; width: 16.6%"></b></div>
+          <span class="lab">Design</span>
+          <div class="track"><b style="left: 8.3%; width: 25%"></b></div>
+          <span class="lab">Development</span>
+          <div class="track"><b style="left: 25%; width: 50%"></b></div>
+          <span class="lab">Testing</span>
+          <div class="track"><b style="left: 58.3%; width: 33.3%"></b></div>
+          <span class="lab">Launch</span>
+          <div class="track"><b style="left: 83.3%; width: 16.6%"></b></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pad">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-7">
+          <h2 class="big mb-3 reveal">How we keep projects on track</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card-x">
+            <div class="ico">📅</div>
+            <h4>Weekly demos</h4>
+            <p>See real progress every week, not slide decks.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-x">
+            <div class="ico">💬</div>
+            <h4>One point of contact</h4>
+            <p>A dedicated project manager who answers within hours.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-x">
+            <div class="ico">🔓</div>
+            <h4>Full transparency</h4>
+            <p>Access to boards, repositories and staging from day one.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-x">
+            <div class="ico">🛡️</div>
+            <h4>Quality built in</h4>
+            <p>Code reviews and automated tests on every change.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-5">
+    <div class="container">
+      <div class="cta" id="cta">
+        <h2 class="big mb-3">Let's plan your project together.</h2>
+        <p class="mb-4">
+          Book a free discovery call and leave with a rough scope, timeline
+          and budget.
+        </p>
+        <a href="start-project.html" class="btn-w">Book a free consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-lg-4"><a class="brand" href="#"><i></i>Corveon</a>
+          <p class="mt-3">Engineering-led transformation: cloud platforms, business systems, data products and
+            specialised delivery pods.</p>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white mb-3">Services</h6>
+          <a href="services/cloud-managed-services.html">Cloud Managed Services</a><br>
+          <a href="services/crm-erp.html">CRM & ERP Implementation</a><br>
+          <a href="services/data-analytics-ai.html">Data, Analytics & AI</a><br>
+          <a href="services/other-services.html">Other Service</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white mb-3">Other Services</h6>
+          <a href="services/us-property-title-search.html">US Property Title Search</a><br>
+          <a href="services/medical-billing.html">Medical Billing</a><br>
+          <a href="services/annoation.html">Annotation</a> <br>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white mb-3">Company</h6>
+          <a href="about.html">About us</a><br>
+          <a href="insights.html">Insights</a><br>
+          <a href="careers.html">Careers</a> <br>
+          <a href="contact.html">Contact</a>
+
+        </div>
+        <div class="col-lg-2">
+          <h6 class="text-white mb-3">Contact</h6>
+          <a href="mailto:hello@Corveon.com">hello@Corveon.com</a><br>
+          <a href="#">+91 00000 00000</a>
+        </div>
+      </div>
+      <p class="mt-5 mb-0 small">© 2026 Corveon. All rights reserved. |<a href="cookie-policy.html"> Cookie policy</a>
+        |<a href="privacy-policy.html"> Privacy Policy </a>|
+        <a href="terms.html"> Terms of use</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/process.js"></script>
+</body>
+
+</html>

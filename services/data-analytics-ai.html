@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Data, Analytics, Custom Dashboards and AI | Corveon</title>
+  <meta name="description"
+    content="Corveon builds data pipelines, warehouses, custom dashboards and applied AI: reporting leaders trust, forecasting, document AI and MLOps." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link href="assets/css/base.css" rel="stylesheet" />
+  <link href="assets/css/service.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="progress"></div>
+  <div class="glow-cursor"></div>
+
+   <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container">
+      <a class="brand" href="/index.html"><i></i>Corveon</a>
+      <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nv" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nv">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+
+          <!-- Services: two-column dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/services.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Services</a>
+            <div class="dropdown-menu dropdown-menu-mega">
+              <div class="row g-3">
+                <div class="col-12 col-lg-6">
+                  <h6 class="dropdown-header">Core services</h6>
+                  <a class="dropdown-item" href="cloud-managed-services.html">
+                    Cloud Managed Services
+                    <small class="d-block">AWS and Azure, designed and run</small>
+                  </a>
+                  <a class="dropdown-item" href="crm-erp.html">
+                    CRM &amp; ERP
+                    <small class="d-block">Zoho and ERPNext, end to end</small>
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    Data, Analytics &amp; AI
+                    <small class="d-block">Pipelines, dashboards, applied AI</small>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <h6 class="dropdown-header">Other services</h6>
+                  <a class="dropdown-item" href="other-services.html">
+                    Other Services
+                    <small class="d-block">Specialised back-office delivery</small>
+                  </a>
+                  <a class="dropdown-item" href="us-property-title-search.html">US Property Title Search</a>
+                  <a class="dropdown-item" href="medical-billing.html">Medical Billing</a>
+                  <a class="dropdown-item" href="annoation.html">Annotation</a>
+                </div>
+              </div>
+              <hr class="dropdown-divider">
+              <a class="dropdown-item" href="/services.html">All services</a>
+            </div>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="/insights.html">Insights</a></li>
+          <li class="nav-item"><a class="nav-link" href="/careers.html">Careers</a></li>
+        </ul>
+        <a href="/contact.html" class="btn btn-glow">Start a project</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="orb" style="width: 440px; height: 440px; background: var(--a); top: -120px; right: -100px;" id="o1">
+    </div>
+    <div class="orb" style="width: 320px; height: 320px; background: var(--b); bottom: -120px; left: 8%; opacity: 0.22;"
+      id="o2"></div>
+    <div class="container position-relative">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="crumb mb-4 fade-in">
+            <a href="index.html">Home</a> /
+            <a href="services.html">Services</a> / Data, Analytics &amp; AI
+          </div>
+          <h1 id="headline" class="mb-4">Numbers people trust, then models worth running</h1>
+          <p class="fs-5 mb-4 fade-in">
+            We engineer the pipeline and the model layer first, then build the dashboards and AI on top. That order is
+            why the reporting still holds up a year later.
+          </p>
+          <div class="d-flex flex-wrap gap-3 fade-in">
+            <a href="contact.html" class="btn btn-glow">Talk to us about data and AI</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ OVERVIEW + TOOLS ============ -->
+  <section class="pad">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-7">
+          <h2 class="big mb-4 reveal">What this service solves</h2>
+          <p class="reveal">
+            Reporting usually breaks in one of three places. The data never arrives reliably. The definitions differ by
+            team, so two dashboards disagree about revenue. Or the visualisation was built for a board slide rather than
+            for the person who has to act on it daily.
+          </p>
+          <p class="reveal">
+            We fix the order of work. Define the measures with the people who own them. Engineer pipelines that are
+            monitored and testable. Model the data so a metric has one definition. Only then design dashboards, and
+            design them around a decision rather than around available fields.
+          </p>
+          <p class="reveal mb-0">
+            AI follows the same discipline. We look for work that is repetitive, high volume and expensive, where a
+            model plus a review step removes real effort. Forecasting, classification, document extraction and retrieval
+            assistants earn their place. Anything that only demonstrates well does not.
+          </p>
+        </div>
+        <div class="col-lg-5">
+          <div class="card-x">
+            <h4 class="mb-4">Tools we work in</h4>
+            <p><b>Warehouse</b><br />Redshift, Synapse, BigQuery, Snowflake, Postgres.</p>
+            <p><b>Pipelines</b><br />Airflow, dbt, Glue, Data Factory, Python.</p>
+            <p><b>Dashboards</b><br />Power BI, Looker Studio, Zoho Analytics, Metabase, custom web.</p>
+            <p class="mb-0"><b>AI and ML</b><br />scikit-learn, PyTorch, managed LLM APIs, vector search.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAPABILITIES ============ -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-7">
+          <h2 class="big mb-3 reveal">What we do</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card-x">
+            <div class="ico">🧭</div>
+            <h4>Data strategy and governance</h4>
+            <p>Metric definitions, ownership, data quality rules, access model, retention and the lightweight governance
+              that fits your size rather than a template built for a bank.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-x">
+            <div class="ico">🔌</div>
+            <h4>Pipelines and integration</h4>
+            <p>Batch and streaming ingestion from ERP, CRM, files, APIs and databases, with validation, alerting on
+              failures and documented lineage.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-x">
+            <div class="ico">🗄️</div>
+            <h4>Warehouse and lakehouse</h4>
+            <p>Dimensional or wide-table modelling, incremental transformations in dbt, tests on the things that break
+              silently, and structure a new analyst can read.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-x">
+            <div class="ico">📊</div>
+            <h4>Custom dashboards</h4>
+            <p>Executive, operational and financial views designed around the decision they support, with drill-through
+              to the transaction and a defined refresh cadence.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-x">
+            <div class="ico">🧩</div>
+            <h4>Embedded analytics</h4>
+            <p>Reporting delivered inside your own product or portal, with row-level security so each customer sees only
+              their data.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-x">
+            <div class="ico">📈</div>
+            <h4>Forecasting and machine learning</h4>
+            <p>Demand and revenue forecasting, churn and propensity scoring, anomaly detection, pricing support and
+              segmentation, evaluated against a baseline before it goes anywhere near production.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-x">
+            <div class="ico">📄</div>
+            <h4>Document AI and assistants</h4>
+            <p>Extraction from invoices, statements, contracts and forms; retrieval-based assistants over your own
+              documents, with citations and a human review step where accuracy matters.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card-x">
+            <div class="ico">🛰️</div>
+            <h4>MLOps and monitoring</h4>
+            <p>Feature and model versioning, deployment pipelines, drift and quality monitoring, and retraining triggers
+              so a model does not quietly decay.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ USE CASES ============ -->
+  <section class="pad">
+    <div class="container">
+      <h2 class="big mb-5 reveal">Where this work pays for itself</h2>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="case">
+            <h4 class="mb-3">Two reports, two revenue numbers</h4>
+            <p class="mb-0">Definitions agreed, a single modelled layer built, both dashboards rebuilt on it.
+              Arguments about whose figure is right end.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="case">
+            <h4 class="mb-3">Operations run on yesterday’s data</h4>
+            <p class="mb-0">A near-real-time operational view of orders, dispatch and exceptions, so problems are
+              handled during the shift rather than reviewed next week.</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="case">
+            <h4 class="mb-3">Planning by gut feel</h4>
+            <p class="mb-0">Demand forecasting by item and region, with accuracy tracked against the previous manual
+              plan so the value is provable.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="case">
+            <h4 class="mb-3">Documents processed by hand</h4>
+            <p class="mb-0">Extraction from supplier invoices and remittances with confidence scoring, routing only
+              low-confidence cases to a person.</p>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="case">
+            <h4 class="mb-3">Customer picture spread across systems</h4>
+            <p class="mb-0">A unified customer view joining CRM, billing and support, giving service teams one screen
+              and finance a reliable segment analysis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APPROACH ============ -->
+  <section id="process" class="pb-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <div style="position: sticky; top: 120px">
+            <h2 class="big mb-3">How we run data engagements</h2>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="step">
+            <div class="n">01</div>
+            <div>
+              <h4>Frame</h4>
+              <p class="mb-0">Agree the decisions the work must support, the measures behind them and how success will
+                be judged.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="n">02</div>
+            <div>
+              <h4>Engineer</h4>
+              <p class="mb-0">Build ingestion and transformation with tests and monitoring. Fix data quality at the
+                source wherever it is possible.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="n">03</div>
+            <div>
+              <h4>Model</h4>
+              <p class="mb-0">Define the shared semantic layer so every metric has one definition and one owner.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="n">04</div>
+            <div>
+              <h4>Visualise</h4>
+              <p class="mb-0">Design and build the dashboards or the AI workflow, test them with real users, adjust
+                before rollout.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="n">05</div>
+            <div>
+              <h4>Improve</h4>
+              <p class="mb-0">Track usage, retire what nobody opens, tune models, extend coverage where the value showed
+                up.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OUTCOMES ============ -->
+  <section class="pad">
+    <div class="container">
+      <h2 class="big mb-5 reveal">What changes</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3 stat">
+          <h3 class="grad">Reporting that is not re-argued</h3>
+          <p class="mb-0">Shared definitions and visible lineage, so a number can be traced to a transaction.</p>
+        </div>
+        <div class="col-md-6 col-lg-3 stat">
+          <h3 class="grad">Less manual assembly</h3>
+          <p class="mb-0">Analysts stop rebuilding the same spreadsheet each month and start doing analysis.</p>
+        </div>
+        <div class="col-md-6 col-lg-3 stat">
+          <h3 class="grad">Earlier warning</h3>
+          <p class="mb-0">Anomalies and exceptions surface while they can still be fixed.</p>
+        </div>
+        <div class="col-md-6 col-lg-3 stat">
+          <h3 class="grad">AI in the few places it earns</h3>
+          <p class="mb-0">Applied where it removes measurable effort, with a human check where the cost of being wrong
+            is high.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <h2 class="big mb-3">Common questions</h2>
+        </div>
+        <div class="col-lg-8">
+          <div class="accordion" id="faq">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#q1">
+                  Do we need a warehouse before we can have dashboards?
+                </button>
+              </h3>
+              <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+                <div class="accordion-body">
+                  Not always. A focused dashboard on one clean source can ship in weeks. You need a warehouse once
+                  numbers must be joined across systems or agreed across teams.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q2">
+                  Can you work with our existing BI tool?
+                </button>
+              </h3>
+              <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body">
+                  Yes. Most of the durable value is in the pipeline and the model layer, which are independent of the
+                  tool on top.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q3">
+                  How do you handle sensitive data in AI work?
+                </button>
+              </h3>
+              <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body">
+                  Data minimisation, masking where fields are not needed, clear rules on what may leave your
+                  environment, and a written note of which models and providers are involved.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q4">
+                  What if a model is not accurate enough?
+                </button>
+              </h3>
+              <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faq">
+                <div class="accordion-body">
+                  We evaluate against a baseline before deployment and agree the accuracy threshold up front. Below it,
+                  the work either continues or stops. It does not go live on optimism.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLOSING CTA ============ -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="cta" id="cta">
+        <h2 class="big mb-3">Let us look at your setup</h2>
+        <p class="mb-4">
+          A short discovery call is enough to tell you whether this is a two-week fix or a two-quarter programme.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="contact.html" class="btn-w">Start a project</a>
+          <a href="services.html" class="btn btn-ghost">Explore services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <a class="brand" href="index.html"><i></i>Corveon</a>
+          <p class="mt-3">Custom software development for startups and scale-ups.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white mb-3">Company</h6>
+          <a href="about.html">About</a><br /><a href="careers.html">Careers</a><br /><a href="work.html">Work</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h6 class="text-white mb-3">Services</h6>
+          <a href="cloud-managed-services.html">Cloud</a><br /><a href="data-analytics-ai.html">Data &amp;
+            AI</a><br /><a href="services.html">All services</a>
+        </div>
+        <div class="col-lg-3">
+          <h6 class="text-white mb-3">Contact</h6>
+          <a href="mailto:hello@Corveon.com">hello@Corveon.com</a><br /><a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <p class="mt-5 mb-0 small">© 2026 Corveon. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="assets/js/data-analytics-ai.js"></script>
+</body>
+
+</html>
