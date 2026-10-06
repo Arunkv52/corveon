@@ -278,3 +278,13 @@ footer a:hover {
     padding: 1.6rem;
   }
 }
+.form-select {
+
+  
+  background-color: #1c3040;
+  color: var(--ink);
+  background-image: transparent;
+  background-repeat: no-repeat;
+  background-position: $form-select-bg-position;
+  background-size: $form-select-bg-size;
+}
