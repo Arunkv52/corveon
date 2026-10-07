@@ -260,6 +260,7 @@ h2.big {
   background: transparent;
   padding: 1.5rem 0;
   box-shadow: none !important;
+  color: var(--c);
 }
 .accordion-button::after {
   filter: invert(1);
@@ -268,6 +269,7 @@ h2.big {
   background: transparent;
   border-left: 0;
   border-right: 0;
+    color: var(--c);
 }
 .accordion-body {
   padding: 0 0 1.5rem;

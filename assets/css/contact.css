@@ -33,16 +33,14 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(var(--line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    linear-gradient(#dcdcdc 1px, transparent 1px),
+    linear-gradient(90deg, #dcdcdc 1px, transparent 1px);
   background-size: 64px 64px;
-  mask-image: radial-gradient(ellipse at 30% 20%, #000 10%, transparent 70%);
-  -webkit-mask-image: radial-gradient(
-    ellipse at 30% 20%,
-    #000 10%,
+  mask-image: radial-gradient(
+    ellipse at center,
+    #00000074 20%,
     transparent 70%
   );
-  opacity: 0.5;
 }
 .hero h1 {
   font-size: clamp(2.4rem, 5vw, 4.2rem);
@@ -84,7 +82,7 @@
 }
 .ct a {
   display: block;
-  color: var(--ink);
+  color: var(--c);
   padding: 0.5rem 0;
   font-weight: 600;
 }
@@ -98,7 +96,7 @@
 }
 /* form card */
 .fcard {
-  background: linear-gradient(211deg, #1e3a5f, #1b2829);
+  background: linear-gradient(135deg, var(--c), var(--c));
   border: 1px solid var(--line);
   border-radius: 28px;
   padding: 2.4rem;
@@ -208,7 +206,7 @@
   margin-bottom: 0.4rem;
 }
 .form-check-input {
-  background-color: transparent;
+  background-color: var(--bg);
   border-color: var(--mute);
 }
 .form-check-input:checked {
@@ -216,7 +214,7 @@
   border-color: var(--a);
 }
 .form-check-label {
-  color: var(--mute);
+  color: var(--bg);
   font-size: 0.9rem;
 }
 .err {
@@ -287,12 +285,7 @@ footer a:hover {
   background: transparent;
   transition: background-color .3s ease, box-shadow .3s ease, padding .3s ease;
 }
-.navbar.solid {
-  background: rgba(14, 16, 48, 0.88);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 1px 0 var(--line), 0 10px 30px -15px #000;
-}
+
 
 /* ---------- Accordion: remove the white background ---------- */
 .accordion {
@@ -312,6 +305,7 @@ footer a:hover {
 }
 .accordion-button:not(.collapsed) {
   box-shadow: none;
+  color: var(--c);
 }
 .accordion-button::after {
   filter: invert(1) brightness(2);   /* white chevron on dark */
@@ -322,11 +316,11 @@ footer a:hover {
 
 /* ---------- Select: fix invalid rule + dark option list ---------- */
 .form-select {
-  background-color: #1c3040;
-  color: var(--ink);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  padding: 0.85rem 1rem;
+    background-color: #1a212f;
+    color: var(--ink);
+    border: 1px solid #1a212f;
+    border-radius: 14px;
+    padding: 0.85rem 1rem;
 }
 .form-select option {
   background: #1c3040;

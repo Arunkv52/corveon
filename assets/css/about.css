@@ -18,7 +18,7 @@ footer a:hover {
   color: #fff;
 }
 .cta p {
-  color: rgba(255, 255, 255, 0.85);
+  
   margin-inline: auto;
 }
 
@@ -49,13 +49,17 @@ footer a:hover {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(var(--line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    linear-gradient(#dcdcdc 1px, transparent 1px),
+    linear-gradient(90deg, #dcdcdc 1px, transparent 1px);
   background-size: 64px 64px;
-  mask-image: radial-gradient(ellipse at 30% 30%, #000 10%, transparent 70%);
+  mask-image: radial-gradient(
+    ellipse at center,
+    #00000074 20%,
+    transparent 70%
+  );
   -webkit-mask-image: radial-gradient(
-    ellipse at 30% 30%,
-    #000 10%,
+    ellipse at center,
+    #000 20%,
     transparent 70%
   );
   opacity: 0.5;
@@ -79,10 +83,10 @@ footer a:hover {
 /* story: words light up as you scroll */
 .story p {
   font-weight: 600;
-  font-size: clamp(1.15rem, 2vw, 1.6rem);
+  font-size: clamp(1.15rem, 2vw, 1.2rem);
   line-height: 1.5;
   letter-spacing: -0.01em;
-  color: var(--ink);
+  color: var(--c);
   max-width: none;
   margin-bottom: 2rem;
 }
@@ -98,11 +102,7 @@ footer a:hover {
   padding: clamp(3rem, 7vw, 5.5rem) 1.5rem;
   border-radius: 32px;
   border: 1px solid var(--line);
-  background: linear-gradient(
-    150deg,
-    rgba(108, 92, 255, 0.22),
-    var(--panel) 65%
-  );
+  background: linear-gradient(135deg, var(--a), #f97316c2);
   overflow: hidden;
 }
 .quote-box::before {
@@ -133,7 +133,7 @@ footer a:hover {
 
 /* cards */
 .val {
-  background: var(--panel);
+  background: var(--c);
   border: 1px solid var(--line);
   border-radius: 22px;
   padding: 2rem;
@@ -170,9 +170,14 @@ footer a:hover {
 .val h4 {
   font-size: 1.2rem;
   font-weight: 700;
+  color: var(--bg);
 }
 .val p {
   margin: 0;
+    color: var(--bg);
+}
+.eng-card p{
+  color: var(--bg);
 }
 .ico {
   width: 54px;
@@ -200,11 +205,12 @@ footer a:hover {
   font-size: 3.6rem;
   line-height: 1;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+  -webkit-text-stroke: 1px var(--a);
 }
 .eng-card h4 {
   font-size: 1.6rem;
   font-weight: 800;
+  color: var(--bg);
 }
 
 /* staffing panel */
@@ -228,7 +234,7 @@ footer a:hover {
 }
 .role-row .n {
   font-weight: 700;
-  color: var(--b);
+  color: var(--c);
   min-width: 2.2rem;
 }
 .role-row h4 {
