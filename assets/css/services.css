@@ -106,13 +106,17 @@
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(var(--line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    linear-gradient(#dcdcdc 1px, transparent 1px),
+    linear-gradient(90deg, #dcdcdc 1px, transparent 1px);
   background-size: 64px 64px;
-  mask-image: radial-gradient(ellipse at 30% 30%, #000 10%, transparent 70%);
+  mask-image: radial-gradient(
+    ellipse at center,
+    #00000074 20%,
+    transparent 70%
+  );
   -webkit-mask-image: radial-gradient(
-    ellipse at 30% 30%,
-    #000 10%,
+    ellipse at center,
+    #000 20%,
     transparent 70%
   );
   opacity: 0.5;
@@ -136,7 +140,7 @@
 /* ---------- stories: sideways scroll, one brand colour ---------- */
 .work {
   overflow: hidden;
-  background: linear-gradient(180deg, var(--bg), #0b0d2b 50%, var(--bg));
+  background: var(--bg);
 }
 .rail {
   display: flex;
@@ -155,11 +159,7 @@
   min-height: 440px;
   padding: 2.4rem;
   border-radius: 28px;
-  background: linear-gradient(
-    150deg,
-    rgba(108, 92, 255, 0.28),
-    var(--panel) 60%
-  );
+  background: var(--c);
   border: 1px solid var(--line);
   transition:
     transform 0.4s,
@@ -178,7 +178,7 @@
   font-size: 5.5rem;
   line-height: 1;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+  -webkit-text-stroke: 1px rgba(var(--cursor), 0.5);
 }
 .sc-tags span {
   display: inline-block;
@@ -193,6 +193,7 @@
   font-size: 2.3rem;
   font-weight: 800;
   margin: 0.4rem 0 0;
+  color: var(--bg);
 }
 .story-card dl {
   margin: 0;
@@ -412,7 +413,7 @@ footer a:hover {
 
 /* service card: feature list + Explore link pinned to the bottom */
 .story-card p {
-  color: var(--mute);
+  color: var(--bg);
   max-width: 52ch;
   margin: 0;
 }
@@ -460,7 +461,7 @@ footer a:hover {
   overflow-x: auto;
   border: 1px solid var(--line);
   border-radius: 22px;
-  background: var(--panel);
+  background: var(--c);
 }
 .models table {
   width: 100%;
@@ -472,22 +473,20 @@ footer a:hover {
   padding: 1.3rem 1.6rem;
   text-align: left;
   vertical-align: top;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid var(--bg);
 }
 .models thead th {
-  font-family: "Sora";
   font-size: 0.85rem;
-  color: var(--mute);
+  color: var(--a);
   font-weight: 600;
 }
 .models tbody th {
-  font-family: "Sora";
   font-weight: 700;
   color: var(--ink);
   white-space: nowrap;
 }
 .models td {
-  color: var(--mute);
+  color: var(--bg);
 }
 .models tbody tr:last-child th,
 .models tbody tr:last-child td {
@@ -497,5 +496,8 @@ footer a:hover {
   transition: background 0.25s;
 }
 .models tbody tr:hover {
-  background: rgba(108, 92, 255, 0.12);
+  background: rgba(var(--cursor), 0.6);
+}
+div#cta .big {
+    color: var(--bg);
 }

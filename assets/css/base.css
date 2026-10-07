@@ -10,6 +10,8 @@
   --a: #f97316;
   --b: #f97316;
   --c: #111827;
+    --cursor : 249, 115, 22;
+
 }
 html {
   scroll-behavior: smooth;
@@ -88,7 +90,7 @@ body::-webkit-scrollbar-thumb {
   --bs-dropdown-link-color: #f2f3ff;
   --bs-dropdown-link-hover-color: #fff;
   --bs-dropdown-link-hover-bg: rgba(108, 92, 255, 0.22);
-  --bs-dropdown-link-active-bg: #6c5cff;
+  --bs-dropdown-link-active-bg: var(--a);
   --bs-dropdown-divider-bg: rgba(255, 255, 255, 0.1);
   min-width: 600px;
   box-shadow: 0 24px 60px -20px #000;
@@ -296,7 +298,7 @@ footer {
   border-radius: 50%;
   background: radial-gradient(
     circle,
-    rgba(108, 92, 255, 0.16),
+    rgba(var(--cursor), 0.6),
     transparent 65%
   );
   pointer-events: none;
@@ -346,4 +348,7 @@ footer {
 }
 .g4 {
   background: linear-gradient(140deg, #1d4ed8, #0e1030);
+}
+a.dropdown-item small {
+    color: #ffffff91 !important;
 }

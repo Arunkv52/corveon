@@ -58,13 +58,17 @@ footer a:hover {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(var(--line) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    linear-gradient(#dcdcdc 1px, transparent 1px),
+    linear-gradient(90deg, #dcdcdc 1px, transparent 1px);
   background-size: 64px 64px;
-  mask-image: radial-gradient(ellipse at 40% 30%, #000 10%, transparent 70%);
+  mask-image: radial-gradient(
+    ellipse at center,
+    #00000074 20%,
+    transparent 70%
+  );
   -webkit-mask-image: radial-gradient(
-    ellipse at 40% 30%,
-    #000 10%,
+    ellipse at center,
+    #000 20%,
     transparent 70%
   );
   opacity: 0.5;

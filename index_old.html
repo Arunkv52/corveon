@@ -22,7 +22,7 @@
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
     <div class="container">
       <a class="brand" href="index.html">
-        <img src="assets/images/Corveon---NewLogo_4.png" alt="" class="logo-src img-fluid">
+        <img src="assets/images/Corveon---NewLogo_1.png" alt="" class="logo-src img-fluid">
       </a>
       <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nv" aria-label="Menu">
         <span class="navbar-toggler-icon"></span>
@@ -30,37 +30,50 @@
 
       <div class="collapse navbar-collapse" id="nv">
         <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About us</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
 
-          <!-- Services is now ONE item: the dropdown (the separate Services link was removed) -->
+          <!-- Services: two-column dropdown -->
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">Services</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/services/web-development.html">Web Development</a></li>
-              <li><a class="dropdown-item" href="service.html?s=ai-integration">AI &amp; Analysis</a></li>
-              <li><a class="dropdown-item" href="service.html?s=ui-ux-design">UI / UX Design</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="services.html">All services</a></li>
-            </ul>
+            <div class="dropdown-menu dropdown-menu-mega">
+              <div class="row g-3">
+                <div class="col-12 col-lg-6">
+                  <h6 class="dropdown-header">Core services</h6>
+                  <a class="dropdown-item" href="services/cloud-managed-services.html">
+                    Cloud Managed Services
+                    <small class="d-block">AWS and Azure, designed and run</small>
+                  </a>
+                  <a class="dropdown-item" href="services/crm-erp.html">
+                    CRM &amp; ERP
+                    <small class="d-block">Zoho and ERPNext, end to end</small>
+                  </a>
+                  <a class="dropdown-item" href="services/data-analytics-ai.html">
+                    Data, Analytics &amp; AI
+                    <small class="d-block">Pipelines, dashboards, applied AI</small>
+                  </a>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <h6 class="dropdown-header">Other services</h6>
+                  <a class="dropdown-item" href="services/other-services.html">
+                    Other Services
+                    <small class="d-block">Specialised back-office delivery</small>
+                  </a>
+                  <a class="dropdown-item" href="services/us-property-title-search.html">US Property Title Search</a>
+                  <a class="dropdown-item" href="services/medical-billing.html">Medical Billing</a>
+                  <a class="dropdown-item" href="services/annotation.html">Annotation</a>
+                </div>
+              </div>
+              <hr class="dropdown-divider">
+              <a class="dropdown-item" href="/services.html">All services</a>
+            </div>
           </li>
 
-         
-          <li class="nav-item">
-            <a class="nav-link" href="careers.html">Careers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="testimonials.html">Testimonials</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
+          <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
         </ul>
-        <a href="start-project.html" class="btn btn-glow">Start a project</a>
+        <a href="contact.html" class="btn btn-glow">Start a project</a>
       </div>
     </div>
   </nav>
