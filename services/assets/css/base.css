@@ -17,7 +17,30 @@ body {
   color: var(--ink);
   font-family: "Google Sans", sans-serif;
   overflow-x: hidden;
+    --sb-track-color: #ffffff;
+  --sb-thumb-color: #c8a96a;
+  --sb-size: 5px;
 }
+
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+}
+
+.logo-src{
+  width: 200px;
+}
+
 h1,
 h2,
 h3,

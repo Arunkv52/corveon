@@ -1,6 +1,6 @@
-/* index page styles */
+/* index page styles (loads after base.css, which holds the navbar, buttons, .tag, .pad etc.) */
 
-
+/* ---------- navbar: links and Services mega menu ---------- */
 .nav-link:hover {
   color: #fff !important;
 }
@@ -16,6 +16,65 @@
   background: var(--ink);
   color: var(--bg);
 }
+
+.navbar .dropdown-menu-mega {
+  --bs-dropdown-bg: #0e1030;
+  --bs-dropdown-border-color: rgba(255, 255, 255, 0.1);
+  --bs-dropdown-border-radius: 20px;
+  --bs-dropdown-link-color: #f2f3ff;
+  --bs-dropdown-link-hover-color: #fff;
+  --bs-dropdown-link-hover-bg: rgba(108, 92, 255, 0.22);
+  --bs-dropdown-divider-bg: rgba(255, 255, 255, 0.1);
+  width: 620px;
+  max-width: 92vw;
+  padding: 1.2rem;
+  box-shadow: 0 30px 70px -20px #000;
+}
+.navbar .dropdown-header {
+  padding: 0.2rem 0.9rem 0.6rem;
+  font-family: "Sora";
+  font-weight: 600;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--b);
+}
+.navbar .dropdown-item {
+  border-radius: 12px;
+  padding: 0.65rem 0.9rem;
+  font-weight: 600;
+  white-space: normal;
+  transition:
+    background 0.2s,
+    padding-left 0.2s;
+}
+.navbar .dropdown-item small {
+  font-weight: 400;
+  color: var(--mute);
+  font-size: 0.82rem;
+}
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  padding-left: 1.2rem;
+}
+.navbar .dropdown-toggle::after {
+  margin-left: 0.45rem;
+  transition: transform 0.3s;
+}
+.navbar .dropdown-toggle.show::after {
+  transform: rotate(180deg);
+}
+.navbar .dropdown-menu.show {
+  animation: ddIn 0.25s ease both;
+}
+@keyframes ddIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+/* ---------- hero ---------- */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -71,7 +130,7 @@
   opacity: 0.5;
 }
 .hero h1 {
-  font-size: clamp(2.6rem, 6vw, 5rem);
+  font-size: clamp(2.4rem, 5.4vw, 4.6rem);
   font-weight: 800;
   line-height: 1.05;
 }
@@ -94,11 +153,18 @@
     box-shadow: 0 0 0 10px transparent;
   }
 }
+
+/* code card + floating chips */
+.visual {
+  position: relative;
+  padding: 2rem 0;
+}
 .code {
   background: rgba(14, 16, 48, 0.8);
   border: 1px solid var(--line);
   border-radius: 18px;
   padding: 1.2rem 1.4rem;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
   font-size: 0.85rem;
   backdrop-filter: blur(10px);
   box-shadow: 0 40px 80px -30px #000;
@@ -141,10 +207,8 @@
   font-weight: 600;
   box-shadow: 0 20px 40px -15px #000;
 }
-.visual {
-  position: relative;
-  padding: 2rem 0;
-}
+
+/* ---------- tech strip ---------- */
 .marq {
   border-block: 1px solid var(--line);
   overflow: hidden;
@@ -155,54 +219,82 @@
   display: flex;
   gap: 4rem;
   width: max-content;
-
   font-size: 1.4rem;
   font-weight: 700;
   color: #4b4f7a;
 }
-.stat h3 {
-  font-size: 3.4rem;
-  font-weight: 800;
+
+/* ---------- four delivery lines (mobile first: stacked, then 2 per row, then one row) ---------- */
+.work {
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--bg), #0b0d2b 50%, var(--bg));
 }
-.stat {
-  border-left: 1px solid var(--line);
-  padding-left: 1.5rem;
-}
-.svc {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 22px;
-  padding: 2rem;
-  height: 100%;
+article.stoty-card-edit {
+  width: 100%;
+  margin: 0;
+  flex: none;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.6rem;
+  border-radius: 24px;
+  background: linear-gradient(
+    150deg,
+    rgba(108, 92, 255, 0.28),
+    var(--panel) 60%
+  );
+  border: 1px solid var(--line);
   transition:
     transform 0.4s,
     border-color 0.4s;
 }
-.svc::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(
-    400px circle at var(--x, 50%) var(--y, 0),
-    rgba(108, 92, 255, 0.25),
-    transparent 60%
-  );
-  opacity: 0;
-  transition: 0.4s;
-}
-.svc:hover {
+article.stoty-card-edit:hover {
   transform: translateY(-8px);
   border-color: rgba(108, 92, 255, 0.6);
 }
-.svc:hover::after {
-  opacity: 1;
+article.stoty-card-edit h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 2.4rem 0 0;
 }
-.svc > * {
-  position: relative;
-  z-index: 1;
+article.stoty-card-edit p {
+  margin: 0;
 }
+.sc-no {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.8rem;
+  font-weight: 800;
+  font-size: 4.5rem;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+}
+@media (min-width: 768px) {
+  article.stoty-card-edit {
+    min-height: 220px;
+    padding: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  article.stoty-card-edit {
+    width: auto;
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 260px;
+    padding: 2.4rem;
+    border-radius: 28px;
+  }
+}
+@media (hover: none) {
+  article.stoty-card-edit:hover {
+    transform: none;
+  }
+}
+
+/* ---------- services: stacked cards ---------- */
 .ico {
   width: 54px;
   height: 54px;
@@ -217,179 +309,6 @@
   );
   margin-bottom: 1.4rem;
 }
-.work {
-  overflow: hidden;
-  background: linear-gradient(180deg, var(--bg), #0b0d2b 50%, var(--bg));
-}
-.rail {
-  display: flex;
-  gap: 2rem;
-  padding: 0 8vw;
-  width: max-content;
-}
-.case {
-  width: min(78vw, 620px);
-  flex: none;
-  border-radius: 26px;
-  padding: 2.2rem;
-  min-height: 420px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid var(--line);
-}
-.case h3 {
-  font-size: 2rem;
-  font-weight: 800;
-}
-.case .pill {
-  display: inline-block;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50px;
-  padding: 0.25rem 0.9rem;
-  font-size: 0.8rem;
-  margin: 0 0.4rem 0.4rem 0;
-}
-.case .big-n {
- 
-  font-size: 5rem;
-  font-weight: 800;
-  line-height: 1;
-}
-.case p {
-  color: rgba(255, 255, 255, 0.75);
-}
-.c1 {
-  background: linear-gradient(140deg, #3b2ea8, #171a55);
-}
-.c2 {
-  background: linear-gradient(140deg, #0e7490, #12224d);
-}
-.c3 {
-  background: linear-gradient(140deg, #a3236a, #251349);
-}
-.c4 {
-  background: linear-gradient(140deg, #1d4ed8, #0e1030);
-}
-.step-line {
-  display: flex;
-  gap: 1.6rem;
-  padding: 1.8rem 0;
-  border-bottom: 1px solid var(--line);
-}
-.step-line .n {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: white;
-  min-width: 2.5rem;
-}
-.bar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 3px;
-  height: 100%;
-  background: var(--line);
-}
-.bar i {
-  display: block;
-  width: 100%;
-  height: 0;
-  background: linear-gradient(var(--a), var(--b));
-}
-.contact-box {
-  border-radius: 32px;
-  padding: 5rem 2rem;
-  text-align: center;
-  background: linear-gradient(90deg, var(--a), #c8a96a);
-}
-.contact-box p {
-  color: rgba(255, 255, 255, 0.85);
-  margin-inline: auto;
-}
-footer a {
-  color: var(--mute);
-  line-height: 2;
-}
-footer a:hover {
-  color: #fff;
-}
-@media (max-width: 991px) {
-  .navbar-collapse {
-    background: var(--panel);
-    padding: 1rem;
-    border-radius: 16px;
-    margin-top: 0.8rem;
-  }
-  .chip {
-    display: none;
-  }
-  .pad {
-    padding: 5rem 0;
-  }
-}
-
-
-.sc-no {
-  position: absolute;
-  top: 1.2rem;
-  right: 1.8rem;
-  font-weight: 800;
-  font-size: 5.5rem;
-  line-height: 1;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
-}
-.sc-tags span {
-  display: inline-block;
-  border: 1px solid var(--line);
-  border-radius: 50px;
-  padding: 0.25rem 0.9rem;
-  font-size: 0.8rem;
-  margin: 0 0.4rem 0.4rem 0;
-  color: var(--mute);
-}
-.story-card h3 {
-  font-size: 2.3rem;
-  font-weight: 800;
-  margin: 0.4rem 0 0;
-}
-.story-card dl {
-  margin: 0;
-  flex: 1;
-}
-.story-card dt {
-
-  font-weight: 600;
-  font-size: 0.78rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--b);
-  margin-top: 0.9rem;
-}
-.story-card dd {
-  margin: 0.2rem 0 0;
-  color: var(--mute);
-  max-width: 46ch;
-}
-.sc-result {
-  display: flex;
-  align-items: baseline;
-  gap: 1rem;
-  border-top: 1px solid var(--line);
-  padding-top: 1.2rem;
-}
-.sc-result b {
-  font-size: 3.6rem;
-  font-weight: 800;
-  line-height: 1;
-}
-.sc-result span {
-  color: var(--ink);
-  font-weight: 600;
-}
-
-/* Services: stacked cards (one brand colour for every card) */
 .stack {
   position: sticky;
   top: 110px;
@@ -444,79 +363,50 @@ footer a:hover {
   color: var(--b);
   border-color: var(--b);
 }
-.tags span {
-  display: inline-block;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50px;
-  padding: 0.25rem 0.9rem;
-  font-size: 0.8rem;
-  margin: 0.3rem 0.4rem 0 0;
-}
-@media (max-width: 991px) {
-  .stack {
-    position: static;
-  }
-  .scard {
-    padding: 1.8rem;
-  }
-}
 
-
-/* my custom files */
-/* Work section: one brand colour family for every card (append to index.css) */
-/* Work section: one brand colour family for every card */
-article.stoty-card-edit {
-  /* mobile first: full-width stacked cards */
-  width: 100%;
-  margin: 0;
-  flex: none;
-  position: relative;
-  overflow: hidden;
+/* ---------- the Corveon model ---------- */
+.step-line {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  min-height: 0;
-  padding: 1.6rem;
-  border-radius: 24px;
-  background: linear-gradient(150deg, rgba(108, 92, 255, 0.28), var(--panel) 60%);
-  border: 1px solid var(--line);
-  
+  gap: 1.6rem;
+  padding: 1.8rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.step-line .n {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  min-width: 2.5rem;
+}
+.bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--line);
+}
+.bar i {
+  display: block;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(var(--a), var(--b));
 }
 
-article.stoty-card-edit:hover {
-  transform: translateY(-8px);
-  border-color: rgba(108, 92, 255, 0.6);
+/* ---------- about overview ---------- */
+.pt {
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--line);
+}
+.pt h5 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0 0 0.3rem;
+}
+.pt p {
+  margin: 0;
 }
 
-/* Tablet: two per row */
-@media (min-width: 768px) {
-  article.stoty-card-edit {
-    
-    min-height: 220px;
-    padding: 2rem;
-  }
-}
-
-/* Desktop: original horizontal row */
-@media (min-width: 992px) {
-  article.stoty-card-edit {
-    width: auto;
-    flex: 1 1 0;
-    min-width: 0;
-    margin: 0;
-    min-height: 240px;
-    padding: 2.4rem;
-    border-radius: 28px;
-  }
-}
-
-/* Touch screens have no hover, so skip the lift */
-@media (hover: none) {
-  article.stoty-card-edit:hover { transform: none; }
-}
-
-
-/* cards */
+/* ---------- why Corveon ---------- */
 .card-items {
   background: linear-gradient(60deg, #1e3a5f, #c8a96a);
   border: 1px solid var(--line);
@@ -552,21 +442,84 @@ article.stoty-card-edit:hover {
   position: relative;
   z-index: 1;
 }
-.ico {
-  width: 54px;
-  height: 54px;
-  border-radius: 16px;
-  display: grid;
-  place-items: center;
-  font-size: 1.5rem;
-  background: linear-gradient(
-    135deg,
-    rgba(108, 92, 255, 0.3),
-    rgba(34, 211, 238, 0.2)
-  );
-  margin-bottom: 1.4rem;
-}
 .card-items h4 {
   font-size: 1.25rem;
   font-weight: 700;
+}
+
+/* ---------- call to action + footer ---------- */
+.contact-box {
+  border-radius: 32px;
+  padding: 5rem 2rem;
+  text-align: center;
+  background: linear-gradient(90deg, var(--a), #c8a96a);
+}
+.contact-box p {
+  color: rgba(255, 255, 255, 0.85);
+  margin-inline: auto;
+}
+footer a {
+  color: var(--mute);
+  line-height: 2;
+}
+footer a:hover {
+  color: #fff;
+}
+
+/* ---------- desktop: Services menu also opens on hover ---------- */
+@media (min-width: 992px) {
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+    animation: ddIn 0.25s ease both;
+  }
+  .navbar .dropdown:hover > .dropdown-toggle::after {
+    transform: rotate(180deg);
+  }
+  .navbar .dropdown-menu {
+    margin-top: 0.6rem;
+  }
+  .navbar .dropdown-menu::before {
+    content: "";
+    position: absolute;
+    top: -0.7rem;
+    left: 0;
+    right: 0;
+    height: 0.7rem;
+  }
+}
+
+/* ---------- tablets and phones ---------- */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background: var(--panel);
+    padding: 1rem;
+    border-radius: 16px;
+    margin-top: 0.8rem;
+  }
+  .navbar .dropdown-menu-mega {
+    width: auto;
+    box-shadow: none;
+    border: 0;
+    background: transparent;
+    padding: 0 0 0 0.6rem;
+  }
+  .chip {
+    display: none;
+  }
+  .pad {
+    padding: 5rem 0;
+  }
+  .stack {
+    position: static;
+  }
+  .scard {
+    padding: 1.8rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .navbar .dropdown-menu,
+  .navbar .dropdown-item {
+    animation: none !important;
+    transition: none !important;
+  }
 }

@@ -38,6 +38,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 3px;
 }
 
+.logo-src{
+  width: 200px;
+}
+
 /* Dropdown Menu */
 .dropdown-menu-mega {
   padding: 1rem 1.25rem;
@@ -126,6 +130,7 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     height: 0.7rem;
   }
+  
 }
 /* phones: sits inside the open menu, no floating card */
 @media (max-width: 991px) {

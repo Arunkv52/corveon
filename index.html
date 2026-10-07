@@ -7,8 +7,11 @@
   <title>Corveon | Cloud, ERP, Data and AI engineering partner</title>
   <meta name="description"
     content="Corveon designs, builds and runs cloud platforms, CRM and ERP systems, data products and specialised back-office operations for growing enterprises.">
+  <link rel="icon" type="image/png" href="assets/images/Favicon-logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="/assets/images/favicon-512x512.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Manrope:wght@400;500;600&display=swap"
+    rel="stylesheet">
   <link href="assets/css/base.css" rel="stylesheet">
   <link href="assets/css/index.css" rel="stylesheet">
 </head>
@@ -17,9 +20,12 @@
   <div class="progress"></div>
   <div class="glow-cursor"></div>
 
-  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark" aria-label="Main">
     <div class="container">
-      <a class="brand" href="index.html"><i></i>Corveon</a>
+      <a class="brand" href="index.html">
+        <img src="assets/images/Corveon---NewLogo_4.png" alt="" class="logo-src img-fluid">
+      </a>
       <button class="navbar-toggler border-0" data-bs-toggle="collapse" data-bs-target="#nv" aria-label="Menu">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,43 +43,36 @@
               <div class="row g-3">
                 <div class="col-12 col-lg-6">
                   <h6 class="dropdown-header">Core services</h6>
-                  <a class="dropdown-item" href="services/cloud-managed-services.html">
-                    Cloud Managed Services
-                    <small class="d-block">AWS and Azure, designed and run</small>
-                  </a>
-                  <a class="dropdown-item" href="services/crm-erp.html">
-                    CRM &amp; ERP
-                    <small class="d-block">Zoho and ERPNext, end to end</small>
-                  </a>
-                  <a class="dropdown-item" href="services/data-analytics-ai.html">
-                    Data, Analytics &amp; AI
-                    <small class="d-block">Pipelines, dashboards, applied AI</small>
-                  </a>
+                  <a class="dropdown-item" href="services/cloud-managed-services.html">Cloud Managed Services<small
+                      class="d-block">AWS and Azure, designed and run</small></a>
+                  <a class="dropdown-item" href="services/crm-erp.html">CRM &amp; ERP<small class="d-block">Zoho and
+                      ERPNext, end to end</small></a>
+                  <a class="dropdown-item" href="services/data-analytics-ai.html">Data, Analytics &amp; AI<small
+                      class="d-block">Pipelines, dashboards, applied AI</small></a>
                 </div>
                 <div class="col-12 col-lg-6">
                   <h6 class="dropdown-header">Other services</h6>
-                  <a class="dropdown-item" href="services/other-services.html">
-                    Other Services
-                    <small class="d-block">Specialised back-office delivery</small>
-                  </a>
+                  <a class="dropdown-item" href="services/other-services.html">Other Services<small
+                      class="d-block">Specialised back-office delivery</small></a>
                   <a class="dropdown-item" href="services/us-property-title-search.html">US Property Title Search</a>
                   <a class="dropdown-item" href="services/medical-billing.html">Medical Billing</a>
                   <a class="dropdown-item" href="services/annotation.html">Annotation</a>
                 </div>
               </div>
               <hr class="dropdown-divider">
-              <a class="dropdown-item" href="/services.html">All services</a>
+              <a class="dropdown-item" href="services.html">All services</a>
             </div>
           </li>
 
           <li class="nav-item"><a class="nav-link" href="insights.html">Insights</a></li>
           <li class="nav-item"><a class="nav-link" href="careers.html">Careers</a></li>
         </ul>
-        <a href="contact.html" class="btn btn-glow">Start a project</a>
+        <a href="start-project.html" class="btn btn-glow">Start a project</a>
       </div>
     </div>
   </nav>
 
+  <!-- HERO -->
   <header class="hero">
     <div class="orb o1"></div>
     <div class="orb o2"></div>
@@ -81,14 +80,13 @@
     <div class="container position-relative">
       <div class="row align-items-center g-5">
         <div class="col-lg-7">
-          <span class="tag mb-4 fade-in"><b></b>Builds & runs cloud platforms</span>
+          <span class="tag mb-4 fade-in"><b></b>Builds &amp; runs cloud platforms</span>
           <h1 id="headline" class="mb-4">Engineering transformation / Building systems that scale.</h1>
           <p class="fs-5 mb-4 fade-in">Corveon plans, builds and runs the cloud platforms, business systems and data
             products that companies depend on every day. One partner, from the first architecture decision to
-            steady-state operations.
-          </p>
+            steady-state operations.</p>
           <div class="d-flex flex-wrap gap-3 fade-in">
-            <a href="start-project.html" class="btn btn-glow">Start a Project</a>
+            <a href="contact.html" class="btn btn-glow">Start a Project</a>
             <a href="services.html" class="btn btn-ghost">See our Services</a>
           </div>
         </div>
@@ -112,76 +110,63 @@
     </div>
   </header>
 
-  <div class="marq">
+  <!-- TECH STRIP -->
+  <div class="marq" aria-label="Platforms we work with">
     <div class="track" id="track">
       <span>AWS</span><span>Azure</span><span>Zoho</span><span>ERPNext</span><span>Warehouses</span><span>Dashboards</span><span>Models</span>
       <span>AWS</span><span>Azure</span><span>Zoho</span><span>ERPNext</span><span>Warehouses</span><span>Dashboards</span><span>Models</span>
     </div>
   </div>
 
-
-
-
-  <section id="work" class="work pad" style="padding-bottom: 0">
+  <!-- FOUR DELIVERY LINES -->
+  <section id="work" class="work pad" style="padding-bottom:0">
     <div class="container mb-5">
-      <h2 class="big mb-3">
-        Corveon works across four delivery lines. Each one is staffed by engineers and specialists
-        who stay with the <span class="grad">account after go-live.</span>
-      </h2>
+      <h2 class="big mb-3 reveal">Corveon works across four delivery lines. Each one is staffed by engineers and
+        specialists who stay with the <span class="grad">account after go-live.</span></h2>
     </div>
-
-    <div id="pin" class="container pb-5">
-      <div class="d-flex flex-column flex-md-row flex-md-wrap flex-lg-nowrap gap-3" id="">
-
-        <article class="stoty-card-edit">
-          <span class="sc-no">01</span>
+    <div class="container pb-5 mb-5">
+      <div class="d-flex flex-column flex-md-row flex-md-wrap flex-lg-nowrap gap-3">
+        <article class="stoty-card-edit"><span class="sc-no">01</span>
           <h3>Cloud platforms</h3>
           <p>Designed, migrated and operated on AWS and Azure</p>
         </article>
-
-        <article class="stoty-card-edit">
-          <span class="sc-no">02</span>
+        <article class="stoty-card-edit"><span class="sc-no">02</span>
           <h3>Business systems</h3>
           <p>Zoho and ERPNext, configured to how you actually work</p>
         </article>
-
-        <article class="stoty-card-edit">
-          <span class="sc-no">03</span>
+        <article class="stoty-card-edit"><span class="sc-no">03</span>
           <h3>Decision support</h3>
           <p>Data pipelines, dashboards and applied AI</p>
         </article>
-
-        <article class="stoty-card-edit">
-          <span class="sc-no">04</span>
+        <article class="stoty-card-edit"><span class="sc-no">04</span>
           <h3>Back-office delivery</h3>
           <p>Title search, medical billing and annotation pods</p>
         </article>
-
       </div>
     </div>
   </section>
 
+  <!-- SERVICES: stacked cards -->
   <section id="services" class="pb-5 pt-5 mt-5">
     <div class="container">
       <div class="row mb-5">
         <div class="col-lg-7">
-          <h2 class="big mb-3">Our Services</h2>
-          <p>One team covers strategy, design, engineering and support, so nothing gets lost between
+          <h2 class="big mb-3 reveal">Our Services</h2>
+          <p class="reveal">One team covers strategy, design, engineering and support, so nothing gets lost between
             vendors.</p>
         </div>
       </div>
     </div>
-    <div class=" container" id="stackwrap">
+    <div class="container" id="stackwrap">
+
       <div class="stack">
         <div class="scard">
           <div class="row g-4 align-items-center">
             <div class="col-lg-7">
-              <div class="ico">🌐</div>
+              <div class="ico">☁️</div>
               <h3>Cloud Managed Services</h3>
-              <p>Landing zones, migration, security and 24x7 operations on Amazon Web Services and Microsoft Azure.
-                We
+              <p>Landing zones, migration, security and 24x7 operations on Amazon Web Services and Microsoft Azure. We
                 take responsibility for uptime, patching, backups and spend, against service levels you set.</p>
-              <!-- <div class="tags"><span>React</span><span>Next.js</span><span>Node.js</span><span>TypeScript</span></div> -->
               <a class="more" href="services/cloud-managed-services.html">Explore cloud services &rarr;</a>
             </div>
             <div class="col-lg-5">
@@ -190,21 +175,20 @@
                 <li>Migration and modernisation</li>
                 <li>Monitoring, patching and DR</li>
                 <li>Cost and FinOps control</li>
-
               </ul>
             </div>
           </div>
         </div>
       </div>
+
       <div class="stack">
         <div class="scard">
           <div class="row g-4 align-items-center">
             <div class="col-lg-7">
-              <div class="ico">📱</div>
-              <h3>CRM & ERP Implementation and Support </h3>
+              <div class="ico">🧩</div>
+              <h3>CRM &amp; ERP Implementation and Support</h3>
               <p>Zoho and ERPNext implementations that follow your process instead of forcing a new one. Discovery,
                 configuration, data migration, integrations, training and long-term application support.</p>
-
               <a class="more" href="services/crm-erp.html">Explore CRM and ERP &rarr;</a>
             </div>
             <div class="col-lg-5">
@@ -218,18 +202,15 @@
           </div>
         </div>
       </div>
+
       <div class="stack">
         <div class="scard">
           <div class="row g-4 align-items-center">
             <div class="col-lg-7">
-              <div class="ico">☁️</div>
+              <div class="ico">📊</div>
               <h3>Data, Analytics, Dashboards and AI</h3>
-              <p>Reliable pipelines, a warehouse people trust, dashboards leaders actually open, and AI applied
-                where it
-                removes real work rather than where it demonstrates well.
-              </p>
-              <div class="tags"><span>AWS</span><span>Docker</span><span>Kubernetes</span><span>Terraform</span>
-              </div>
+              <p>Reliable pipelines, a warehouse people trust, dashboards leaders actually open, and AI applied where it
+                removes real work rather than where it demonstrates well.</p>
               <a class="more" href="services/data-analytics-ai.html">Explore data and AI &rarr;</a>
             </div>
             <div class="col-lg-5">
@@ -243,16 +224,15 @@
           </div>
         </div>
       </div>
+
       <div class="stack">
         <div class="scard">
           <div class="row g-4 align-items-center">
             <div class="col-lg-7">
-              <div class="ico">🎨</div>
+              <div class="ico">🗂️</div>
               <h3>Other Services</h3>
-              <p>Specialised back-office work delivered by trained, supervised pods with published quality targets:
-                US
+              <p>Specialised back-office work delivered by trained, supervised pods with published quality targets: US
                 property title search, medical billing and data annotation.</p>
-
               <a class="more" href="services/other-services.html">Explore other services &rarr;</a>
             </div>
             <div class="col-lg-5">
@@ -261,22 +241,22 @@
                 <li>Medical billing and AR follow-up</li>
                 <li>Data annotation and labelling</li>
                 <li>Documented QC at every step</li>
-
               </ul>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
+  <!-- THE CORVEON MODEL -->
   <section id="process" class="pad">
     <div class="container">
       <div class="row g-5">
         <div class="col-lg-5">
           <div style="position:sticky;top:120px">
-            <h2 class="big mb-3">The Corveon model
-            </h2>
+            <h2 class="big mb-3">The Corveon model</h2>
             <p>The same five stages apply whether we are migrating a datacentre or standing up a billing pod. What
               changes is the depth of each stage.</p>
           </div>
@@ -296,17 +276,15 @@
             <div>
               <h4>Build</h4>
               <p class="mb-0">Design and engineer the platform, system or process. Small increments, working software,
-                no surprises at the end of a quarter.
-              </p>
+                no surprises at the end of a quarter.</p>
             </div>
           </div>
           <div class="step-line">
             <div class="n">03</div>
             <div>
               <h4>Deploy</h4>
-              <p class="mb-0"> Migrate data, train people, cut over with a tested rollback. Go-live is an event we
-                rehearse, not one we hope for.
-              </p>
+              <p class="mb-0">Migrate data, train people, cut over with a tested rollback. Go-live is an event we
+                rehearse, not one we hope for.</p>
             </div>
           </div>
           <div class="step-line">
@@ -330,152 +308,132 @@
     </div>
   </section>
 
-  <!-- 2. OVERVIEW -->
+  <!-- ABOUT / OVERVIEW -->
   <section class="pad" id="overview">
     <div class="container">
       <div class="row g-5">
         <div class="col-lg-5">
-          <div>
-            <div class="sh mb-0"><span class="kick"></span>
-              <h2 class="big">About Corveon</h2>
-              <p>Plenty of organisations have a sound strategy and a stalled
-                programme. The gap is rarely ambition. It is the missing layer between the slide deck and the system
-                that
-                has to run on a Monday morning.</p>
-              <p>Corveon exists to hold that layer. We are engineers,
-                implementers and operators who take a plan through build, cutover and the unglamorous years of running
-                it
-                well.
-              </p>
-
-
-            </div>
-          </div>
+          <h2 class="big mb-3">About Corveon</h2>
+          <p>Plenty of organisations have a sound strategy and a stalled programme. The gap is rarely ambition. It is
+            the missing layer between the slide deck and the system that has to run on a Monday morning.</p>
+          <p>Corveon exists to hold that layer. We are engineers, implementers and operators who take a plan through
+            build, cutover and the unglamorous years of running it well.</p>
         </div>
         <div class="col-lg-7">
-
-          <div class="">
-            <div class="pt reveal-item">
-              <div>
-                <h5>Advisory</h5>
-                <p> Architecture, process design, roadmaps and cost cases.</p>
-              </div>
-            </div>
-            <div class="pt reveal-item">
-              <div>
-                <h5>Delivery</h5>
-                <p>Implementation pods that build, migrate and go live.</p>
-              </div>
-            </div>
-            <div class="pt reveal-item">
-              <div>
-                <h5>Managed services</h5>
-                <p> Long-term operations against defined service levels.</p>
-              </div>
-            </div>
-            <div class="mt-5">
-              <a href="about.html" class="btn-w">Read about us</a>
+          <div class="pt reveal-item">
+            <div>
+              <h5>Advisory</h5>
+              <p>Architecture, process design, roadmaps and cost cases.</p>
             </div>
           </div>
+          <div class="pt reveal-item">
+            <div>
+              <h5>Delivery</h5>
+              <p>Implementation pods that build, migrate and go live.</p>
+            </div>
+          </div>
+          <div class="pt reveal-item">
+            <div>
+              <h5>Managed services</h5>
+              <p>Long-term operations against defined service levels.</p>
+            </div>
+          </div>
+          <div class="mt-5"><a href="about.html" class="btn-w">Read about us</a></div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- WHY CORVEON -->
   <section class="pad" id="usecases">
     <div class="container">
-      <div class="sh pb-5"><span class="kick"></span>
-        <h2 class="big">Why Corveon</h2>
-      </div>
-
+      <h2 class="big pb-5 reveal">Why Corveon</h2>
       <div class="row g-4 mb-5">
         <div class="col-md-6 col-lg-3">
-          <div class="card-items ind uc">
+          <div class="card-items">
             <h4>Engineering first</h4>
             <p>Decisions are made by the people who will have to operate the result. No abstract recommendations handed
               to someone else to implement.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
-          <div class="card-items ind uc">
+          <div class="card-items">
             <h4>End-to-end ownership</h4>
             <p>One accountable team from strategy through to the third year of support. Fewer handoffs is fewer places
               for work to fall over.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
-          <div class="card-items ind uc">
+          <div class="card-items">
             <h4>Systems that scale</h4>
             <p>We design for the volume you expect in three years, and for the team size you will realistically have to
               run it.</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
-          <div class="card-items ind uc">
+          <div class="card-items">
             <h4>Measured delivery</h4>
             <p>Scope, dates, service levels and quality targets are written down, reported monthly and reviewed openly.
             </p>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
-  <!-- call to action button -->
+  <!-- CALL TO ACTION -->
   <section id="contact" class="pb-5">
     <div class="container">
-      <div class="contact-box" id="">
+      <div class="contact-box" id="cta">
         <h2 class="big mb-3">Start your transformation journey</h2>
         <p class="mb-4">Tell us what is slowing the business down. We will come back with a view on scope, sequence and
           cost, usually within two working days.</p>
-
-        <div class="d-flex justify-content-center flex-wrap gap-3 fade-in">
-          <a href="start-project.html" class="btn-w">Start a Project</a>
+        <div class="d-flex justify-content-center flex-wrap gap-3">
+          <a href="contact.html" class="btn-w">Start a Project</a>
           <a href="services.html" class="btn btn-ghost">See all Services</a>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="row g-3">
-        <div class="col-lg-4"><a class="brand" href="#"><i></i>Corveon</a>
+        <div class="col-lg-4"><a class="brand" href="index.html">
+            <img src="assets/images/Corveon---NewLogo_3.png" alt="" class="logo-src img-fluid">
+          </a>
           <p class="mt-3">Engineering-led transformation: cloud platforms, business systems, data products and
             specialised delivery pods.</p>
         </div>
-
         <div class="col-6 col-lg-2">
           <h6 class="text-white mb-3">Services</h6>
           <a href="services/cloud-managed-services.html">Cloud Managed Services</a><br>
-          <a href="services/crm-erp.html">CRM & ERP Implementation</a><br>
-          <a href="services/data-analytics-ai.html">Data, Analytics & AI</a><br>
-          <a href="services/other-services.html">Other Service</a>
+          <a href="services/crm-erp.html">CRM &amp; ERP Implementation</a><br>
+          <a href="services/data-analytics-ai.html">Data, Analytics &amp; AI</a><br>
+          <a href="services/other-services.html">Other Services</a>
         </div>
         <div class="col-6 col-lg-2">
           <h6 class="text-white mb-3">Other Services</h6>
           <a href="services/us-property-title-search.html">US Property Title Search</a><br>
           <a href="services/medical-billing.html">Medical Billing</a><br>
-          <a href="services/annoation.html">Annotation</a> <br>
+          <a href="services/annotation.html">Annotation</a>
         </div>
         <div class="col-6 col-lg-2">
           <h6 class="text-white mb-3">Company</h6>
           <a href="about.html">About us</a><br>
           <a href="insights.html">Insights</a><br>
-          <a href="careers.html">Careers</a> <br>
-          <a href="contact.html">Contact</a>
-
+          <a href="careers.html">Careers</a><br>
+          <a href="start-project.html">Contact</a>
         </div>
         <div class="col-lg-2">
           <h6 class="text-white mb-3">Contact</h6>
-          <a href="mailto:hello@Corveon.com">hello@Corveon.com</a><br>
-          <a href="#">+91 00000 00000</a>
+          <a href="mailto:hello@corveon.com">hello@corveon.com</a><br>
+          <a href="tel:+910000000000">+91 00000 00000</a>
         </div>
       </div>
-      <p class="mt-5 mb-0 small">© 2026 Corveon. All rights reserved. |<a href="cookie-policy.html"> Cookie policy</a>
-        |<a href="privacy-policy.html"> Privacy Policy </a>|
-        <a href="terms.html"> Terms of use</a>
+      <p class="mt-5 mb-0 small">© 2026 Corveon. All rights reserved. | <a href="cookie-policy.html">Cookie policy</a> |
+        <a href="privacy-policy.html">Privacy policy</a> | <a href="terms.html">Terms of use</a>
       </p>
     </div>
   </footer>

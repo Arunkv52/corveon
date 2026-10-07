@@ -278,13 +278,57 @@ footer a:hover {
     padding: 1.6rem;
   }
 }
-.form-select {
 
-  
+/* ---------- Navbar: full-width background on scroll ---------- */
+.navbar {
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: transparent;
+  transition: background-color .3s ease, box-shadow .3s ease, padding .3s ease;
+}
+.navbar.solid {
+  background: rgba(14, 16, 48, 0.88);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 var(--line), 0 10px 30px -15px #000;
+}
+
+/* ---------- Accordion: remove the white background ---------- */
+.accordion {
+  --bs-accordion-bg: transparent;
+  --bs-accordion-color: var(--ink);
+  --bs-accordion-border-color: var(--line);
+  --bs-accordion-btn-bg: transparent;
+  --bs-accordion-btn-color: var(--ink);
+  --bs-accordion-active-bg: rgba(255, 255, 255, 0.04);
+  --bs-accordion-active-color: #fff;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.18);
+  --bs-accordion-btn-focus-border-color: var(--b);
+}
+.accordion-item {
+  background: transparent;
+  border-color: var(--line);
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+.accordion-button::after {
+  filter: invert(1) brightness(2);   /* white chevron on dark */
+}
+.accordion-body {
+  color: var(--mute);
+}
+
+/* ---------- Select: fix invalid rule + dark option list ---------- */
+.form-select {
   background-color: #1c3040;
   color: var(--ink);
-  background-image: transparent;
-  background-repeat: no-repeat;
-  background-position: $form-select-bg-position;
-  background-size: $form-select-bg-size;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
+}
+.form-select option {
+  background: #1c3040;
+  color: var(--ink);
 }
