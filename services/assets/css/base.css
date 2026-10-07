@@ -1,13 +1,13 @@
 /* Shared styles used across pages */
 :root {
-  --bg: #07081a;
-  --panel: #012969;
-  --line: rgba(255, 255, 255, 0.1);
+  --bg: #ffffff;
+  --panel: #f97316;
+  --line: #111827;
   --ink: #f2f3ff;
-  --mute: #9a9ec4;
-  --a: #004dab;
-  --b: #012969;
-  --c: #d69422;
+  --mute: #111827;
+  --a: #f97316;
+  --b: #f97316;
+  --c: #111827;
 }
 html {
   scroll-behavior: smooth;
@@ -17,11 +17,10 @@ body {
   color: var(--ink);
   font-family: "Google Sans", sans-serif;
   overflow-x: hidden;
-    --sb-track-color: #ffffff;
+  --sb-track-color: #ffffff;
   --sb-thumb-color: #c8a96a;
   --sb-size: 5px;
 }
-
 
 body::-webkit-scrollbar {
   width: var(--sb-size);
@@ -37,7 +36,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 3px;
 }
 
-.logo-src{
+.logo-src {
   width: 200px;
 }
 
@@ -67,10 +66,10 @@ a {
   transition: 0.3s;
 }
 .navbar.solid {
-  background: rgba(7, 8, 26, 0.85);
-  backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--line);
-  padding: 0.7rem 0;
+    background: rgb(239 238 238 / 85%);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid #dddddd;
+    padding: 0.7rem 0;
 }
 .brand {
   font-weight: 800;
@@ -129,6 +128,7 @@ a {
 h2.big {
   font-size: clamp(2rem, 4.2vw, 3.4rem);
   font-weight: 800;
+  color: var(--c);
 }
 .accordion-button {
   font-weight: 600;
@@ -156,15 +156,15 @@ h2.big {
     var(--bs-accordion-border-color);
 }
 button.accordion-button.collapsed {
-    /* background-color: red; */
-    color: white;
+  /* background-color: red; */
+  color: white;
 }
 
 .accordion-item {
-    background: transparent;
-    border-left: 0;
-    border-right: 0;
-    border-radius: 0;
+  background: transparent;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
 }
 
 .cta {
