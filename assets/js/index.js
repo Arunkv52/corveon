@@ -92,15 +92,19 @@ if (reduce) {
   });
 
   // tech strip (slows on hover)
-  const mq = gsap.to("#track", {
-    xPercent: -50,
-    duration: 30,
-    ease: "none",
-    repeat: -1,
-  });
-  const mqEl = document.querySelector(".marq");
-  mqEl.addEventListener("mouseenter", () => gsap.to(mq, { timeScale: 0.2 }));
-  mqEl.addEventListener("mouseleave", () => gsap.to(mq, { timeScale: 1 }));
+// tech strip (slows on hover)
+const trackEl = document.getElementById("track");
+trackEl.innerHTML = trackEl.innerHTML.repeat(4);   // 4 identical sets
+
+const mq = gsap.to(trackEl, {
+  xPercent: -50,        // moves exactly 2 sets, so the loop is seamless
+  duration: 30,
+  ease: "none",
+  repeat: -1,
+});
+const mqEl = document.querySelector(".marq");
+mqEl.addEventListener("mouseenter", () => gsap.to(mq, { timeScale: 0.2 }));
+mqEl.addEventListener("mouseleave", () => gsap.to(mq, { timeScale: 1 }));
 
   // scroll reveals
   gsap.utils

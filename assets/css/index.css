@@ -32,12 +32,10 @@
 }
 .navbar .dropdown-header {
   padding: 0.2rem 0.9rem 0.6rem;
-  font-family: "Sora";
   font-weight: 600;
   font-size: 0.78rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--b);
 }
 .navbar .dropdown-item {
   border-radius: 12px;
@@ -168,7 +166,6 @@
   border: 1px solid var(--line);
   border-radius: 18px;
   padding: 1.2rem 1.4rem;
-  font-family: ui-monospace, Menlo, Consolas, monospace;
   font-size: 0.85rem;
   backdrop-filter: blur(10px);
   box-shadow: 0 40px 80px -30px #000;
@@ -222,10 +219,14 @@
 .track {
   display: flex;
   gap: 4rem;
+  padding-right: 4rem;   /* makes the loop point exact */
   width: max-content;
   font-size: 1.4rem;
   font-weight: 700;
   color: #4b4f7a;
+}
+.track span {
+  white-space: nowrap;
 }
 
 /* ---------- four delivery lines (mobile first: stacked, then 2 per row, then one row) ---------- */
