@@ -6,15 +6,15 @@
 }
 .btn-ghost {
   border: 1px solid var(--line);
-  color: var(--ink);
+  color: var(--c);
   border-radius: 50px;
   padding: 0.8rem 1.8rem;
   font-weight: 600;
   transition: 0.3s;
 }
 .btn-ghost:hover {
-  background: var(--ink);
-  color: var(--bg);
+  background: var(--line);
+  color: var(--c);
 }
 
 .navbar .dropdown-menu-mega {
@@ -227,7 +227,7 @@
 /* ---------- four delivery lines (mobile first: stacked, then 2 per row, then one row) ---------- */
 .work {
   overflow: hidden;
-  background: linear-gradient(180deg, var(--bg), #0b0d2b 50%, var(--bg));
+
 }
 article.stoty-card-edit {
   width: 100%;
@@ -240,11 +240,8 @@ article.stoty-card-edit {
   gap: 1rem;
   padding: 1.6rem;
   border-radius: 24px;
-  background: linear-gradient(
-    150deg,
-    rgba(108, 92, 255, 0.28),
-    var(--panel) 60%
-  );
+  background: var(--mute);
+  color: var(--ink);
   border: 1px solid var(--line);
   transition:
     transform 0.4s,
@@ -261,6 +258,8 @@ article.stoty-card-edit h3 {
 }
 article.stoty-card-edit p {
   margin: 0;
+    color: var(--ink);
+
 }
 .sc-no {
   position: absolute;
@@ -322,12 +321,13 @@ article.stoty-card-edit p {
   min-height: 340px;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(120deg, #0e53a6, #b5a070);
+  background: var(--c);
   box-shadow: 0 -24px 50px -30px #000;
 }
 .scard h3 {
   font-size: 2rem;
   font-weight: 800;
+  color: var(--ink);
 }
 .scard p {
   color: rgba(255, 255, 255, 0.78);
@@ -374,7 +374,7 @@ article.stoty-card-edit p {
 .step-line .n {
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--c);
   min-width: 2.5rem;
 }
 .bar {
@@ -408,7 +408,8 @@ article.stoty-card-edit p {
 
 /* ---------- why Corveon ---------- */
 .card-items {
-  background: linear-gradient(60deg, #1e3a5f, #c8a96a);
+  background: var(--c);
+  color: var(--bg);
   border: 1px solid var(--line);
   border-radius: 22px;
   padding: 2rem;
@@ -446,13 +447,16 @@ article.stoty-card-edit p {
   font-size: 1.25rem;
   font-weight: 700;
 }
+.card-items p{
+  color: var(--bg);
+}
 
 /* ---------- call to action + footer ---------- */
 .contact-box {
   border-radius: 32px;
   padding: 5rem 2rem;
   text-align: center;
-  background: linear-gradient(90deg, var(--a), #c8a96a);
+  background: var(--c);
 }
 .contact-box p {
   color: rgba(255, 255, 255, 0.85);
