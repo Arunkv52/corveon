@@ -31,7 +31,7 @@ footer a {
   line-height: 2;
 }
 footer a:hover {
-  color: #fff;
+  color: var(--a);
 }
 
 /* section heading block */
@@ -151,9 +151,12 @@ footer a:hover {
   opacity: 0;
   transition: 0.4s;
 }
+a.card-x small {
+    color: var(--a);
+}
 .card-x:hover {
   transform: translateY(-8px);
-  border-color: rgba(108, 92, 255, 0.6);
+  border-color: rgba(var(--cursor), 0.6);
 }
 .card-x:hover::after {
   opacity: 1;

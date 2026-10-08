@@ -336,7 +336,7 @@ footer a {
   line-height: 2;
 }
 footer a:hover {
-  color: #fff;
+  color: var(--a);
 }
 
 /* ---------- desktop: Services menu also opens on hover ---------- */

@@ -15,7 +15,7 @@ footer a {
   line-height: 2;
 }
 footer a:hover {
-  color: #fff;
+  color: var(--a);
 }
 .cta p {
   

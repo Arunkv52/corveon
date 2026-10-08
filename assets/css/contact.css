@@ -260,7 +260,7 @@ footer a {
   line-height: 2;
 }
 footer a:hover {
-  color: #fff;
+  color: var(--a);
 }
 @media (max-width: 991px) {
   .navbar-collapse {
